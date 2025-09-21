@@ -47,6 +47,31 @@ def get_recode_maps():
     }
     return maps
 
+def generar_estadisticas(df, columnas):
+    """
+    Calcula estadísticas clave para una lista de columnas en un DataFrame.
+    Si una columna no es numérica, las estadísticas numéricas se muestran como NaN.
+    """
+    stats_list = []
+    for col in columnas:
+        if col in df.columns:
+            # Check if the column dtype is numeric before calculating stats
+            is_numeric = pd.api.types.is_numeric_dtype(df[col])
+
+            stats = {
+                'Columna': col,
+                'Tipo de Dato': df[col].dtype,
+                'Valores No Nulos': df[col].count(),
+                'Valores Nulos': df[col].isnull().sum(),
+                'Media': df[col].mean() if is_numeric else np.nan,
+                'Desv. Estándar': df[col].std() if is_numeric else np.nan,
+                'Mínimo': df[col].min() if is_numeric else np.nan,
+                'Máximo': df[col].max() if is_numeric else np.nan
+            }
+            stats_list.append(stats)
+
+    return pd.DataFrame(stats_list).set_index('Columna')
+
 def process_data():
     # --- Phase 1: Data Loading and Unification ---
     files = [f for f in os.listdir('Empleabilidad') if f.endswith('.csv')]
@@ -64,6 +89,9 @@ def process_data():
 
     master_df = pd.concat(df_list, ignore_index=True)
     master_df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
+
+    # Lista de columnas representativas para la auditoría
+    columnas_a_evaluar = ['C208', 'INGTOT', 'whoraT']
 
     # --- Phase 2: Visual Data Cleaning ---
 
@@ -104,6 +132,10 @@ def process_data():
             plt.close()
             print(f"Evidence saved to: {file_path}")
 
+    # --- Capture "BEFORE" statistics ---
+    print("\n--- Capturando estadísticas ANTES de la limpieza ---")
+    stats_antes = generar_estadisticas(master_df, columnas_a_evaluar)
+
     # Step C: Perform Data Sanitization
     print("\n--- Applying cleaning: Replacing special codes with NaN ---\n")
     for column, codes in codes_to_nan.items():
@@ -140,6 +172,26 @@ def process_data():
             plt.savefig(file_path)
             plt.close()
             print(f"Evidence saved to: {file_path}")
+
+    # --- Capture "AFTER" statistics ---
+    print("\n--- Capturando estadísticas DESPUÉS de la limpieza ---")
+    stats_despues = generar_estadisticas(master_df, columnas_a_evaluar)
+
+    # --- Generate and Export Quantitative Summary ---
+    print("\n--- Generando tabla comparativa de limpieza ---")
+    # Combinar los DataFrames con claves para crear un encabezado de múltiples niveles
+    tabla_comparativa = pd.concat([stats_antes, stats_despues], axis=1, keys=['ANTES DE LA LIMPIEZA', 'DESPUÉS DE LA LIMPIEZA'])
+
+    # Redondear valores numéricos para mejor legibilidad
+    tabla_comparativa = tabla_comparativa.round(2)
+
+    # Guardar la tabla en un archivo Markdown
+    ruta_salida = 'cleaning_evidence/resumen_cuantitativo_limpieza.md'
+    tabla_comparativa.to_markdown(ruta_salida)
+
+    print(f"\nTabla de resumen de la limpieza guardada en: {ruta_salida}")
+    print("\n--- Contenido de la Tabla de Resumen ---")
+    print(tabla_comparativa.to_markdown())
 
     # --- Unify and Adjust Expansion Factor ---
     master_df['factor_expansion'] = master_df[fa_cols].sum(axis=1)
