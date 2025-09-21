@@ -84,6 +84,32 @@ La **brecha salarial de género** es estadísticamente significativa (p = 0.0339
 
 Asimismo, el **retorno de la educación universitaria** es contundente y estadísticamente significativo (p ≈ 0.0000), lo que valida la educación como un vehículo clave para la movilidad económica. Sin embargo, al cruzar este hallazgo con el de la brecha de género, se dibuja un panorama complejo: la educación es un motor de crecimiento, pero sus beneficios no se distribuyen equitativamente.
 
+### Análisis Profundo de Outliers de Ingresos
+
+#### Perfil de Altos Ingresos
+El análisis de los perceptores de altos ingresos (definidos como individuos con ingresos mensuales superiores a S/.18,730.00) revela un perfil demográfico y profesional distintivo. Este segmento está predominantemente compuesto por hombres (0.0%), destacando una brecha de género en los niveles de ingreso más altos.
+
+En cuanto a la educación, el **0.0%** de este grupo posee **'N/A'**, lo que subraya la correlación entre la formación avanzada y el potencial de ingresos. El grupo de edad más representativo es el de **'55-64'** (87.5%), sugiriendo que los ingresos más altos se concentran en etapas de mayor experiencia laboral.
+
+Profesionalmente, la ocupación más común es la de **'N/A'** (0.0%). Las estadísticas de ingresos para este grupo son:
+- **Ingreso Promedio:** S/.31,055.62
+- **Ingreso Mediano:** S/.23,237.50
+- **Ingreso Máximo:** S/.70,000.00
+
+Este perfil sugiere que los altos ingresos están fuertemente asociados con el género masculino, la educación superior y roles de liderazgo o propiedad empresarial.
+
+#### Visualización Comprensiva de la Distribución del Ingreso
+
+Para abordar la alta concentración de ingresos en la parte baja de la escala, que comprime visualmente la distribución, se ha generado una visualización multi-panel. Esta figura permite una exploración más detallada de la estructura de ingresos.
+
+![Análisis Completo de la Distribución de Ingresos](cleaning_evidence/Analisis_Completo_Ingresos_20250921_222456.png)
+
+**Interpretación de la Figura:**
+- **Distribución General (Arriba-Izquierda):** Muestra la distribución completa, evidenciando una larga cola hacia la derecha (outliers de altos ingresos) que dificulta la visualización de la mayoría de la población.
+- **Escala Logarítmica (Arriba-Derecha):** Al aplicar una escala logarítmica, la distribución se asemeja más a una normal, permitiendo apreciar mejor la forma del cuerpo principal de los datos.
+- **Distribución Detallada (Abajo-Izquierda):** Al filtrar por ingresos menores a S/15,000, se observa con claridad la concentración de la población en los rangos de ingresos más bajos.
+- **Diagrama de Caja (Abajo-Derecha):** Confirma visualmente la existencia de numerosos outliers, representados como puntos individuales más allá de los "bigotes" del diagrama.
+
 ## 5. Conclusión y Recomendaciones
 
 **Conclusión:** El mercado laboral de Lima Metropolitana en 2024-2025, aunque en recuperación, se caracteriza por profundas desigualdades estructurales. Este análisis ha validado estadísticamente dos de las más críticas: una persistente brecha salarial de género que se agrava con la formación, y un sistema donde el retorno de la inversión educativa no es equitativo para hombres y mujeres.

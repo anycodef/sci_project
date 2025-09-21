@@ -1,0 +1,14 @@
+
+### Análisis Profundo de Outliers de Ingresos
+
+#### Perfil de Altos Ingresos
+El análisis de los perceptores de altos ingresos (definidos como individuos con ingresos mensuales superiores a S/.18,730.00) revela un perfil demográfico y profesional distintivo. Este segmento está predominantemente compuesto por hombres (0.0%), destacando una brecha de género en los niveles de ingreso más altos.
+
+En cuanto a la educación, el **0.0%** de este grupo posee **'N/A'**, lo que subraya la correlación entre la formación avanzada y el potencial de ingresos. El grupo de edad más representativo es el de **'55-64'** (87.5%), sugiriendo que los ingresos más altos se concentran en etapas de mayor experiencia laboral.
+
+Profesionalmente, la ocupación más común es la de **'N/A'** (0.0%). Las estadísticas de ingresos para este grupo son:
+- **Ingreso Promedio:** S/.31,055.62
+- **Ingreso Mediano:** S/.23,237.50
+- **Ingreso Máximo:** S/.70,000.00
+
+Este perfil sugiere que los altos ingresos están fuertemente asociados con el género masculino, la educación superior y roles de liderazgo o propiedad empresarial.
