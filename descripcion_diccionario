@@ -1,0 +1,2192 @@
+ENCUESTA PERMANENTE DE
+EMPLEO NACIONAL
+
+DICCIONARIO DE DATOS
+(MARZO 2024)
+
+Abril del 2024
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+
+CARACTERÍSTICAS DE LOS
+MIEMBROS DEL HOGAR,
+EMPLEO E INGRESO
+
+(Archivo Empleo)
+
+Diccionario de Datos
+
+2
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+
+Archivo: Trim Ene-Feb-Mar24
+Nombre de la
+variable
+
+Tamaño
+
+Decimales
+
+Formato
+
+ANIO
+MES
+CONGLOMERADO
+
+4
+2
+21
+
+0
+
+N
+C
+C
+
+Año de la encuesta
+Mes de la encuesta
+Número del conglomerado
+
+MUESTRA
+
+1
+
+0
+
+N
+
+Nº de Sub Muestra
+
+SELVIV
+
+4
+
+C
+
+Número de selección de la vivienda
+
+HOGAR
+
+1
+
+0
+
+N
+
+Hogar
+
+REGION
+
+1
+
+0
+
+N
+
+Región
+1. Lima Metropolitana
+2. Resto urbano
+3. Rural
+
+Etiqueta
+
+rango
+1
+
+3
+
+LLAVE_PANEL
+
+25
+
+0
+
+C
+
+Código del personal panel
+
+ESTRATO
+
+1
+
+0
+
+N
+
+ESTRATO (Estrato geográfico)
+1. Conformado por aquellas UPM de 500000 a más habitantes
+2. Conformado por aquellas UPM de 100000 a 499999 habitantes
+3. Conformado por aquellas UPM de 50000 a 99999 habitantes
+4. Conformado por aquellas UPM de 20000 a 49999 habitantes
+5. Conformado por aquellas UPM de 2000 a 19999 habitantes
+6. Conformado por aquellas UPM de 500 a 1999 habitantes
+7. Conformado por el AER Compuesto
+8. Conformado por el AER Simple
+rango
+1
+
+8
+
+200. CARACTERÍSTICAS DE LOS MIEMBROS DEL HOGAR
+
+C201
+
+2
+
+0
+
+N
+
+201. N° de orden (CÓDIGO DE PERSONA)
+Rango: (1:30)
+
+C203
+
+2
+
+0
+
+N
+
+203. ¿CUÁL ES LA RELACIÓN DE PARENTESCO CON EL JEFE DEL
+HOGAR?
+1. Jefe/a
+2. Esposo/a o compañero/a
+3. Hijo/a o hijastro/a
+4. Yerno o Nuera
+5. Nieto/a
+6. Padre / madre / suegro/a
+7.Hermano/a
+8. Otro pariente
+9. Trabajador/a del hogar
+10. Pensionista
+11.Otro no pariente
+98. No residente
+
+Diccionario de Datos
+
+3
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+rango
+1
+
+C204
+
+1
+
+0
+
+N
+
+98
+
+204. ¿ES MIEMBRO DEL HOGAR?
+1. Si
+2. No
+rango
+1
+
+C205
+
+1
+
+0
+
+N
+
+2
+
+205. ¿SE ENCUENTRA AUSENTE DEL HOGAR 30 DÍAS O MÁS?
+1. Si
+2. No
+rango
+1
+
+C206
+
+1
+
+0
+
+N
+
+2
+
+206. ¿ESTA PRESENTE EN EL HOGAR 30 DÍAS O MÁS?
+1. Si
+2. No
+rango
+1
+
+C207
+
+1
+
+0
+
+N
+
+2
+
+207. SEXO
+1. Hombre
+2. Mujer
+rango
+
+C208
+
+2
+
+0
+
+N
+
+1
+2
+¿QUÉ EDAD TIENE EN AÑOS CUMPLIDOS?
+99 Missing value
+rango
+0
+
+98
+
+300. EMPLEO (Personas de 14 años y más de edad)
+
+C300n
+
+2
+
+0
+
+N
+
+CÓDIGO DE PERSONA (MODULO DE EMPLEO)
+rango
+
+NROINF
+
+2
+
+0
+
+N
+
+0
+25
+CÓDIGO DE INFORMANTE (MODULO EMPLEO)
+rango
+0
+
+25
+
+CONDICIÓN DE ACTIVIDAD
+
+C301_DIA
+
+2
+
+0
+
+N
+
+301. ¿CUÁL ES LA FECHA DE SU NACIMIENTO? - DIA
+99 Missing value
+
+C301_MES
+
+2
+
+0
+
+N
+
+301. ¿CUÁL ES LA FECHA DE SU NACIMIENTO? - MES
+99 Missing value
+
+C301_ANIO
+
+4
+
+0
+
+N
+
+301. ¿CUÁL ES LA FECHA DE SU NACIMIENTO? - AÑO
+9999 Missing value
+
+C303
+
+1
+
+0
+
+N
+
+303. LA SEMANA PASADA, DEL……AL....,¿TUVO UD. ALGÚN
+TRABAJO? (Sin contar los quehaceres del hogar)
+1. Si
+2. No
+
+Diccionario de Datos
+
+4
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+9. Missing value
+rango
+1
+
+C304
+
+1
+
+0
+
+N
+
+2
+
+304. AUNQUE NO TRABAJÓ LA SEMANA PASADA, ¿TIENE ALGÚN
+EMPLEO FIJO AL QUE PRÓXIMAMENTE VOLVERÁ?
+1. Si
+2. No
+9. Missing value
+rango
+1
+
+C305
+
+1
+
+0
+
+N
+
+2
+
+305. AUNQUE NO TRABAJÓ LA SEMANA PASADA, ¿TIENE ALGÚN
+NEGOCIO PROPIO AL QUE PRÓXIMAMENTE VOLVERÁ?
+1. Si
+2. No
+9. Missing value
+rango
+1
+
+C306_1
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 1? ¿Trabajando en algún negocio propio o de un familiar?
+1. Si
+2. No
+rango
+1
+
+C306_2
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 2? ¿Ofreciendo algún servicio?
+1. Si
+2. No
+rango
+1
+
+C306_3
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 3? Haciendo algo en casa para vender
+1. Si
+2. No
+rango
+1
+
+C306_4
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 4? Vendiendo productos de belleza, ropa, joyas, ¿entre otros?
+1. Si
+2. No
+Rango
+1
+
+Diccionario de Datos
+
+2
+5
+
+Encuesta Permanente de Empleo Nacional
+
+C306_5
+
+1
+
+0
+
+INEI
+
+N
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 5. Realizando alguna labor artesanal
+1. Si
+2. No
+rango
+1
+
+C306_6
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 6? ¿Haciendo prácticas pagadas en un centro de trabajo?
+1. Si
+2. No
+rango
+1
+
+C306_7
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 7? Trabajando para un hogar particular
+1. Si
+2. No
+rango
+1
+
+C306_8
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 8? ¿Fabricando algún producto?
+1. Si
+2. No
+rango
+1
+
+C306_9
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 9? ¿Realizando labores remuneradas en la chacra o cuidado de
+animales?
+1. Si
+2. No
+rango
+1
+
+C306_10
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 10? ¿Ayudando a un familiar de su hogar, sin remuneración?
+1. Si
+2. No
+rango
+1
+
+C306_10A
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 10? A. Ayudando con el empleo de algún miembro de su hogar?
+1. Si
+
+Diccionario de Datos
+
+6
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+2. No
+rango
+1
+
+C306_11
+
+1
+
+0
+
+N
+
+2
+
+306. LA SEMANA PASADA, ¿REALIZÓ ALGUNA ACTIVIDAD AL MENOS
+UNA HORA PARA OBTENER INGRESOS EN DINERO O EN ESPECIE,
+COMO: 11? ¿Otra?
+1. Si
+2. No
+rango
+
+C306A
+
+1
+
+0
+
+N
+
+1
+2
+306A. ¿EL INFORMANTE ES PRODUCTOR AGRÍCOLA Y/O
+PECUARIO?
+1. Si
+2. No
+rango
+1
+
+2
+
+OCUPADOS
+OCUPACIÓN PRINCIPAL
+
+C308_COD
+
+4
+
+0
+
+N
+
+308. ¿CUÁL ES LA OCUPACIÓN PRINCIPAL QUE DESEMPEÑÓ? CODIGO
+9999 Missing value
+
+C309_COD
+
+4
+
+0
+
+N
+
+309. ¿A QUÉ SE DEDICA EL NEGOCIO, ORGANISMO O EMPRESA EN
+LA QUE TRABAJÓ EN SU OCUPACIÓN PRINCIPAL? CODIGO
+9999 Missing value
+
+C310
+
+2
+
+0
+
+N
+
+310. UD. SE DESEMPEÑÓ EN SU OCUPACIÓN PRINCIPAL O NEGOCIO
+COMO:
+1. ¿Empleador o patrono?
+2. ¿Trabajador independiente?
+3. ¿Empleado u obrero?
+4. ¿Ayudante en un negocio de la familia?
+5. ¿Ayudante en el empleo de un familiar?
+6. ¿Trabajador del hogar?
+7. ¿Aprendiz/practicante remunerado?
+8. ¿Practicante sin remuneración?
+9. ¿Ayudante en un negocio de la familia de otro hogar
+10. ¿Ayudante en el empleo de un familiar de otro hogar?
+rango
+1
+
+C311
+
+1
+
+0
+
+N
+
+10
+
+311. EN SU OCUPACIÓN PRINCIPAL, ¿UD. TRABAJÓ PARA:
+1. ¿Fuerzas Armadas, Policía Nacional del Perú (militares)?
+2. ¿Administración pública?
+3. ¿Empresa pública?
+
+Diccionario de Datos
+
+7
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+4. ¿Empresas especiales de servicios (SERVICE)?
+5. ¿Empresa o patrono privado?
+6. ¿Otra?
+rango
+1
+
+C312
+
+1
+
+0
+
+N
+
+6
+
+312. EL NEGOCIO O EMPRESA DONDE TRABAJA, ¿SE ENCUENTRA
+REGISTRADO EN LA SUNAT?, COMO:
+1. ¿Persona jurídica (¿Sociedad Anónima SRL, ¿Sociedad Civil, EIRL o
+Asociación, etc.?
+2. ¿Persona Natural con RUC (RUS, RER, u otro régimen)?
+3. ¿NO ESTA REGISTRADO (¿no tiene RUC?
+4.NO SABE (solo para dependientes)
+rango
+1
+
+C313
+
+1
+
+0
+
+N
+
+4
+
+313. EL NEGOCIO O EMPRESA DONDE TRABAJA, ¿LLEVA LAS
+CUENTAS POR MEDIO DE LIBROS CONTABLES EXIGIDOS POR LA
+SUNAT O SISTEMA DE CONTABILIDAD?
+1. Si
+2. No
+3. No Sabe
+rango
+1
+
+C317
+
+1
+
+0
+
+N
+
+3
+
+317. EN SU TRABAJO, NEGOCIO O EMPRESA, INCLUYÉNDOSE UD.,
+¿LABORARON:
+1. Hasta 20 personas?
+2. De 21 a 50 personas?
+3. De 51 a 100 personas?
+4. De 101 a 500 personas?
+5. Más de 500 personas?
+rango
+
+C317A
+
+4
+
+0
+
+N
+
+1
+5
+317. EN SU TRABAJO, NEGOCIO O EMPRESA, INCLUYÉNDOSE UD.,
+¿LABORARON: N° DE PERSONAS
+9999 Missing value
+
+C318_1
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - Domingo
+99 Missing value
+
+C318_2
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - lunes
+99 Missing value
+
+Diccionario de Datos
+
+8
+
+Encuesta Permanente de Empleo Nacional
+C318_3
+
+2
+
+0
+
+INEI
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - martes
+99 Missing value
+
+C318_4
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - miércoles
+99 Missing value
+
+C318_5
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - jueves
+99 Missing value
+
+C318_6
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - viernes
+99 Missing value
+
+C318_7
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - sábado
+99 Missing value
+
+C318_T
+
+2
+
+0
+
+N
+
+318. ¿CUÁNTAS HORAS TRABAJÓ LA SEMANA PASADA, EN SU
+OCUPACIÓN PRINCIPAL? (DÍA POR DÍA) - Total
+
+C328_T
+
+2
+
+0
+
+N
+
+99 Missing value
+328. ¿CUÁNTO HORA TRABAJÓ LA SEMANA PASADA EN SU(S)
+OCUPACIONES SECUNDARIAS?
+99 Missing value
+
+whoraT
+
+3
+
+0
+
+N
+
+Hora total de los ocupados
+99 Missing value
+
+OCUPACIÓN SECUNDARIA
+TOTAL DE HORAS TRABAJADAS
+
+C330
+
+1
+
+0
+
+N
+
+330.EN TOTAL UD. TRABAJÓ HORAS LA SEMANA PASADA.
+¿NORMALMENTE TRABAJA ESAS HORAS A LA SEMANA?
+1. Si
+2. No
+rango
+
+C331
+
+3
+
+0
+
+N
+
+1
+2
+331.NORMALMENTE, ¿CUÁNTAS HORAS TRABAJA A LA SEMANA EN
+TODAS SUS OCUPACIONES?
+99 Missing value
+
+C333
+
+1
+
+0
+
+N
+
+333.LA SEMANA PASADA ¿QUERÍA TRABAJAR MÁS HORA DE LAS
+QUE NORMALMENTE TRABAJADAS?
+1. Si
+2. No
+rango
+
+C334
+
+1
+
+0
+
+N
+
+1
+2
+334.LA SEMANA PASADA ¿ESTUVO DISPONIBLE PARA TRABAJAR
+MÁS HORA?
+1. Si
+2. No
+rango
+1
+
+P209H
+
+1
+
+0
+
+N
+
+2
+
+¿TUVO LA VOLUNTAD DE TRABAJAR MAS HORAS Y ADEMÁS
+ESTUVO DISPONIBLE PARA HACERLO?
+1. Si
+
+Diccionario de Datos
+
+9
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+2. No
+rango
+1
+
+2
+
+BÚSQUEDA DE OTRO EMPLEO (Ocupados)
+
+C335
+
+1
+
+0
+
+N
+
+335.LA SEMANA PASADA, ¿ESTUVO UD. BUSCANDO OTRO
+TRABAJO?
+1. Si
+2. No
+rango
+1
+
+2
+
+DEPENDIENTES
+INGRESO EN LA OCUPACIÓN PRINCIPAL POR TRABAJO DEPENDIENTE
+
+C338
+
+1
+
+0
+
+N
+
+338 EN SU OCUPACIÓN PRINCIPAL, ¿A UD. LE PAGAN:
+1. Diario?
+2. Semanal?
+3. Quincenal?
+4. Mensual?
+5. No recibió pago alguno
+rango
+
+C339_1
+
+6
+
+0
+
+N
+
+C341_T
+
+6
+
+0
+
+N
+
+1
+5
+339_1 OCUPACIÓN PRINCIPAL ¿CUÁNTO FUE SU INGRESO TOTAL
+EN EL (LA)…ANTERIOR, INCLUYENDO HORAS EXTRAS,
+BONIFICACIONES, PAGO POR CONCEPTO DE REFRIGERIO,
+MOVILIDAD, COMISIONES, ¿ENTRE OTROS? A. Ingreso total - Monto
+S/.
+999999 Missing value
+341_T EN SU OCUPACIÓN PRINCIPAL, ¿CON QUÉ FRECUENCIA Y EN
+CUÁNTO ESTIMARÍA UD. EL PAGO EN ESPECIES?: VALOR ESTIMADO
+TOTAL
+999999 Missing value
+
+INGRESO EN LA OCUPACIÓN PRINCIPAL POR TRABAJO INDEPENDIENTE
+
+C342
+
+6
+
+0
+
+N
+
+C344
+
+6
+
+0
+
+N
+
+342 EN SU OCUPACIÓN PRINCIPAL, ¿CUÁL FUE LA GANANCIA NETA
+EN EL MES ANTERIOR?
+999999 Missing value
+344 ¿EN CUÁNTO ESTIMA UD. EL VALOR DE LOS PRODUCTOS
+UTILIZADOS PARA SU CONSUMO EN EL MES ANTERIOR?
+999999 Missing value
+
+INGRESO EN LA OCUPACIÓN SECUNDARIA POR TRABAJO DEPENDIENTE
+
+C345_1
+
+6
+
+C347_T
+
+6
+
+0
+
+0
+
+N
+
+345. ¿CUÁNTO FUE SU INGRESO TOTAL EN EL MES ANTERIOR,
+INCLUYENDO HORAS EXTRAS, BONIFICACIONES, PAGO POR
+CONCEPTO DE REFRIGERIO, MOVILIDAD, COMISIONES, ¿ENTRE
+OTROS? ¿EN SU(S) OCUPACIÓN(ES) SECUNDARIA(S)? A. MONTO
+DEL INGRESO TOTAL
+
+N
+
+999999 Missing value
+347 EN SU OCUPACIÓN SECUNDARIA ¿CON QUÉ FRECUENCIA Y EN
+CUÁNTO ESTIMARÍA UD. EL PAGO EN ESPECIES?: VALOR ESTIMADO
+TOTAL
+999999 Missing value
+
+INGRESO EN LA OCUPACIÓN SECUNDARIA POR TRABAJO INDEPENDIENTE
+
+Diccionario de Datos
+
+10
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+
+C348
+
+6
+
+0
+
+N
+
+C350
+
+6
+
+0
+
+N
+
+348. EN SU(S) OCUPACIÓN(ES) SECUNDARIA(S), ¿CUÁL FUE SU
+GANANCIA NETA EN EL MES ANTERIOR? Soles
+999999 Missing value
+350 EN SU OCUPACIÓN SECUNDARIA ¿EN CUANTO ESTIMA UD, EL
+VALOR DE LOS PRODUCTOS UTILIZADOS PARA SU CONSUMO EN EL
+MES ANTERIOR?: VALOR ESTIMADO TOTAL
+999999 Missing value
+DESOCUPADOS
+
+C352
+
+1
+
+0
+
+N
+
+352. LA SEMANA PASADA, ¿HIZO ALGO PARA CONSEGUIR
+TRABAJO?
+1. Si
+2. No
+rango
+1
+
+C353
+
+2
+
+0
+
+N
+
+2
+
+353. ¿QUÉ ESTUVO HACIENDO LA SEMANA PASADA?
+1. ¿Hizo trámites, buscó local, gestionó préstamos para establecer su
+propio negocio?
+2. Reparando sus activos (local, maquina, ¿equipo)?
+3. Esperando el inicio de un trabajo dependiente (como obrero, empleado o
+trabajador del hogar)?
+4. Estudiando?
+5. Quehaceres del hogar?
+6. Vivía de su pensión o jubilación u otras rentas?
+7. Enfermo o incapacitado?
+8. Otro?
+rango
+
+C354
+
+1
+
+0
+
+N
+
+1
+8
+354. LA SEMANA PASADA, ¿QUERÍA UD. TRABAJAR?
+1. Si
+2. No
+rango
+
+C355
+
+1
+
+0
+
+N
+
+1
+2
+355. LA SEMANA PASADA, ¿ESTUVO DISPONIBLE PARA TRABAJAR?
+1. Si
+2. No
+rango
+1
+
+C356
+
+2
+
+0
+
+N
+
+2
+
+356. ¿POR QUÉ NO BUSCÓ TRABAJO?
+1. No hay trabajo
+2. Se cansó de buscar
+3. Por su edad
+4. Falta de experiencia
+5. Sus estudios no le permiten
+6. Los quehaceres del hogar no le permiten
+7. Razones de salud
+
+Diccionario de Datos
+
+11
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+8. Falta de capital
+9. Espera los resultados de una búsqueda anterior
+10. Por el Covid-19 (para evitar contagio, por ser vulnerable, entre otros)
+11. Otro
+12. Ya encontró trabajo
+13. Si buscó trabajo
+rango
+
+C357_I
+
+2
+
+0
+
+N
+
+1
+13
+357. LA SEMANA PASADA ¿QUÉ HIZO PARA CONSEGUIR TRABAJO?
+REGISTRE EL CODIGO DE LA GESTION MAS IMPORTANTE
+1. Empleador / patrono
+2. Agencia de empleo
+3. Bolsa de trabajo de Instituciones públicas
+4. Bolsa de trabajo de Instituciones privadas
+5. Amigos y/o parientes
+6. Diarios, revistas o anuncios
+7. Envío su curriculum vitae a empresas o instituciones
+8. Publicó avisos en diarios, revistas o anuncios
+9. Buscó clientes o pedidos
+10. Otro?
+rango
+1
+
+C358
+
+3
+
+0
+
+N
+
+10
+
+358. ¿CUÁNTAS SEMANAS HA ESTADO BUSCANDO TRABAJO, SIN
+INTERRUPCIONES?
+rango (Número de semanas)
+1
+
+998
+
+TRABAJO ANTERIOR (Para ocupados, desocupados e inactivos)
+
+C359
+
+1
+
+0
+
+N
+
+359. ¿HA TRABAJADO ANTES?
+1. Si
+2. No
+rango
+1
+
+2
+
+ASEGURAMIENTO EN SALUD
+
+SEGURO1
+
+C361_1
+
+1
+
+1
+
+Diccionario de Datos
+
+0
+
+0
+
+N
+
+N
+
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO ES
+1. ESSALUD (Antes IPSS)
+2. Seguro privado de Salud
+3. Ambos
+4. Otro
+5. Seguro Integral de Salud (SIS)
+6. No está afiliado
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 1 ¿ESSALUD?
+1. Si
+12
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+2. No
+rango
+
+C362_1
+
+1
+
+0
+
+N
+
+1
+2
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 1. ESSALUD
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+5. No paga
+rango
+1
+
+C361_2
+
+1
+
+0
+
+N
+
+5
+
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 2 ¿SEGURO PRIVADO DE SALUD?
+1. Si
+2. No
+rango
+
+C362_2
+
+1
+
+0
+
+N
+
+1
+2
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 2.SEGURO
+PRIVADO DE SALUD
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+Rango
+1
+
+C361_3
+
+1
+
+0
+
+N
+
+4
+
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 3. ¿ENTIDAD PRESTADORA DE SALUD?
+1. Si
+2. No
+rango
+1
+
+C362_3
+
+1
+
+0
+
+N
+
+2
+
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 3.ENTIDAD
+PRESTADORA DE SALUD
+1 su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+rango
+
+C361_4
+
+1
+
+0
+
+N
+
+1
+4
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 4. ¿SEGURO DE FF.AA./ POLICIALES?
+1. Si
+2. No
+
+C362_4
+
+1
+Diccionario de Datos
+
+0
+
+N
+
+rango
+1
+2
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 4. SEGURO
+DE FF.AA./ POLICIALES
+13
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+
+C361_5
+
+1
+
+0
+
+N
+
+rango
+1
+4
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 5. ¿SEGURO INTEGRAL DE SALUD (SIS)?
+1. Si
+2. No
+rango
+
+C362_5
+
+1
+
+0
+
+N
+
+1
+2
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 5. SEGURO
+INTEGRAL DE SALUD (SIS)
+1 Su centro de trabajo
+2. Ud. mismo.
+4. Un familiar.
+5. No paga
+
+C361_6
+
+1
+
+0
+
+N
+
+rango
+1
+5
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 6. ¿SEGURO UNIVERSITARIO?
+1. Si
+2. No
+rango
+1
+
+C362_6
+
+1
+
+0
+
+N
+
+2
+
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 6. SEGURO
+UNIVERSITARIO
+2. Ud. mismo.
+4. Un familiar.
+rango
+
+C361_7
+
+1
+
+0
+
+N
+
+2
+4
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 7. ¿SEGURO ESCOLAR PRIVADO?
+1. Si
+2. No
+rango
+
+C362_7
+
+1
+
+0
+
+N
+
+1
+2
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 7. SEGURO
+ESCOLAR PRIVADO
+2. Ud. mismo.
+4. Un familiar
+rango
+
+C361_8
+
+1
+
+0
+
+N
+
+2
+4
+361. EL SISTEMA DE SEGURO DE SALUD AL CUAL ESTA AFILIADO
+ES. 8 ¿OTRO?
+1. Si
+2. No
+
+Diccionario de Datos
+
+14
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+rango
+1
+
+C362_8
+
+1
+
+0
+
+N
+
+2
+
+362.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 8. OTRO
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+5. No paga
+rango
+1
+
+C364_1
+
+1
+
+0
+
+N
+
+5
+
+364. EL SISTEMA DE PENSIONES AL CUAL ESTA AFILIADO ES.
+1. SISTEMA PRIVADO DE PENSIONES (AFP)
+1. Si
+2. No
+rango
+
+C365_1
+
+1
+
+0
+
+N
+
+1
+2
+365.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 1. SISTEMA
+PRIVADO DE PENSIONES (AFP)
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+5. No paga
+rango
+1
+
+C364_2
+
+1
+
+0
+
+N
+
+5
+
+364. EL SISTEMA DE PENSIONES AL CUAL ESTA AFILIADO ES.
+2. SISTEMA NACIONAL DE PENSIONES LEY 19990
+1. Si
+2. No
+rango
+
+C365_2
+
+1
+
+0
+
+N
+
+1
+2
+365.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 2. SISTEMA
+NACIONAL DE PENSIONES LEY 19990
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+5. No paga
+rango
+1
+
+C364_3
+
+1
+
+0
+
+N
+
+5
+
+364. EL SISTEMA DE PENSIONES AL CUAL ESTA AFILIADO ES.
+3. SISTEMA NACIONAL DE PENSIONES LEY 20530 (CÉLULA VIVA)
+1. Si
+2. No
+rango
+1
+
+Diccionario de Datos
+
+2
+15
+
+Encuesta Permanente de Empleo Nacional
+C365_3
+
+1
+
+0
+
+INEI
+N
+
+365.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 3. SISTEMA
+NACIONAL DE PENSIONES LEY 20530 (CÉLULA VIVA)
+1 Su centro de trabajo
+3. Es jubilado
+4. Un familiar.
+rango
+
+C364_4
+
+1
+
+0
+
+N
+
+1
+4
+364. EL SISTEMA DE PENSIONES AL CUAL ESTA AFILIADO ES.
+4. OTRO
+1. Si
+2. No
+rango
+1
+
+C365_4
+
+1
+
+0
+
+N
+
+2
+
+365.QUIEN APORTA LOS CUOTAS POR ESTAR AFILIADO. 4. OTRO
+1 Su centro de trabajo
+2. Ud. mismo.
+3. Es jubilado
+4. Un familiar.
+rango
+1
+
+4
+
+NIVELES DE EDUCACIÓN
+
+C366
+
+2
+
+0
+
+N
+
+366. CUÁL ES EL ÚLTIMO AÑO O GRADO DE ESTUDIOS Y NIVEL QUE
+APROBÓ
+1. Sin nivel
+2. Educación Inicial
+3. Primaria incompleta
+4. Primaria completa
+5. Secundaria incompleta
+6. Secundaria completa
+7. Básica especial
+8. Superior no universitaria incompleta
+9. Superior no universitaria completa
+10. Superior universitaria incompleta
+11. Superior universitaria completa
+12. Maestria/Doctorado
+rango
+
+C366_1
+
+1
+
+0
+
+N
+
+1
+12
+366. ¿CUÁL ES EL ÚLTIMO AÑO O GRADO DE ESTUDIOS Y NIVEL
+QUE APROBÓ? Año
+99 Missing value
+
+C366_2
+
+1
+
+0
+
+N
+
+366. ¿CUÁL ES EL ÚLTIMO AÑO O GRADO DE ESTUDIOS Y NIVEL
+QUE APROBÓ? Grado
+99 Missing value
+
+Diccionario de Datos
+
+16
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+
+DISCAPACIDAD
+
+C375_1
+
+1
+
+0
+
+N
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 1.
+Moverse o caminar, para usar brazos o piernas?
+1. Si
+2. No
+rango
+1
+
+C375_2
+
+1
+
+0
+
+N
+
+2
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 2?
+Ver, ¿aun usando anteojos?
+1. Si
+2. No
+rango
+1
+
+C375_3
+
+1
+
+0
+
+2
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 3
+Hablar o comunicarse, aun usando la lengua de señas u otro
+
+N
+
+1. Si
+2. No
+rango
+1
+
+C375_4
+
+1
+
+0
+
+N
+
+2
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 4.
+Oír, aun usando audífonos?
+1. Si
+2. No
+rango
+1
+
+C375_5
+
+1
+
+0
+
+N
+
+2
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 5.
+Entender o aprender (concentrarse y recordar)?
+1. Si
+2. No
+rango
+1
+
+C375_6
+
+1
+
+0
+
+N
+
+2
+
+375. ¿TIENE UD. LIMITACIONES DE FORMA PERMANENTE, PARA: 6.
+Relacionarse con los demás, por sus pensamientos, sentimientos,
+emociones o conductas?
+1. Si
+2. No
+rango
+1
+
+2
+
+ETNICIDAD
+
+C376
+
+1
+
+0
+
+N
+
+376. ¿CUÁL ES EL IDIOMA O LENGUA MATERNA QUE APRENDIÓ EN
+SU NIÑEZ?
+1. Quechua?
+2. Aimara?
+
+Diccionario de Datos
+
+17
+
+Encuesta Permanente de Empleo Nacional
+
+INEI
+3. Ashaninka?
+4. Awajún/Aguaruna?
+5. Shipibo - Konibo?
+6. Shawi / Chayahuita?
+7. Matigenka / Machiguenga?
+8. Achuar?
+9. Otra lengua nativa?
+10. Castellano?
+11. Portugués?
+12. Otra lengua extranjera?
+13. NO ESCUCHA/NO HABLA
+14. LENGUA DE SEÑAS PERUANAS
+rango
+
+C377
+
+1
+
+0
+
+N
+
+1
+14
+377. POR SUS COSTUMBRES Y SUS ANTEPASADOS, ¿UD. SE SIENTE
+O SE CONSIDERA:
+1. Quechua?
+2. Aymara?
+3. Nativo o Indígena de la Amazonía?
+4. Perteneciente o parte de otro Pueblo indígena originario?
+5. Negro/Moreno/Zambo/Mulato/Pueblo Afro peruano o Afrodescendiente?
+6. Blanco?
+7. Mestizo?
+8. Otro?
+9. NO SABE/NO RESPONDE
+rango
+1
+9
+MENSUALIZACIÓN
+
+OCUP300
+
+1
+
+0
+
+N
+
+NIVEL DE OCUPACION (Indicador de Condición de Actividad)
+0. Sin información
+1. Ocupado
+2. Desocupado abierto
+3. Desocupado oculto
+4. Inactivo pleno
+
+I339_1
+
+6
+
+0
+
+N
+
+rango
+1
+4
+Ingreso mensual monetario de la actividad principal por trabajador
+dependiente
+Rango : (1:999998)
+
+D341_T
+
+6
+
+0
+
+N
+
+Ingreso mensual en especies de la actividad principal por trabajador
+dependiente (valorizado)
+Rango : (1:999998)
+
+I342
+
+6
+
+0
+
+N
+
+Ingreso mensual monetario de la actividad principal por trabajador
+independiente
+Rango : (1:999998)
+
+Diccionario de Datos
+
+18
+
+Encuesta Permanente de Empleo Nacional
+D344
+
+6
+
+0
+
+INEI
+N
+
+Ingreso mensual en especies de la actividad principal por trabajador
+independiente (valorizado)
+Rango : (1:999998)
+
+I345_1
+
+6
+
+0
+
+N
+
+Ingreso mensual monetario de la actividad secundaria por
+trabajador dependiente
+Rango : (1:999998)
+
+I348
+
+6
+
+0
+
+N
+
+Ingreso mensual monetario de la actividad secundaria por trabajador
+independiente
+
+N
+
+Ingreso mensual en especies de la actividad secundaria por trabajador
+dependiente (valorizado)
+
+Rango : (1:999998)
+
+D347_T
+
+6
+
+0
+
+Rango : (1:999998)
+
+D350
+
+6
+
+0
+
+N
+
+Ingreso mensual en especies de la actividad secundaria por trabajador
+independiente (valorizado)
+
+D351_T
+
+6
+
+0
+
+N
+
+(Mensual) En los últimos 12 meses, recibió algún dinero: Total
+
+INGTOT
+
+8
+
+0
+
+N
+
+Ingresos totales
+
+INGTOTP
+
+8
+
+0
+
+N
+
+INGTRABW
+
+8
+
+0
+
+N
+
+RESIDENT
+
+1
+
+0
+
+N
+
+Ingreso principal mensual
+Ingreso mensual, ocupación principal y secundaria con ingresos
+extraordinarios
+Residente habitual
+0. No
+1. Si
+9. Omisión 200
+
+fa_efm24
+
+Diccionario de Datos
+
+8
+
+2
+
+N
+
+Factor de expansión Trimestral (enero-febrero-marzo 2024) para el cálculo
+del empleo
+
+19
+
+
