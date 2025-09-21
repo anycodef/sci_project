@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 import os
+import matplotlib.pyplot as plt
+import seaborn as sns
+from datetime import datetime
 
 def get_recode_maps():
     """Returns dictionaries for recoding variables based on the data dictionary."""
@@ -60,58 +63,83 @@ def process_data():
         df_list.append(df)
 
     master_df = pd.concat(df_list, ignore_index=True)
+    master_df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
 
-    # --- Phase 2.A: Identification and Mapping of Special Codes (Outlier Sanitization) ---
+    # --- Phase 2: Visual Data Cleaning ---
+
+    # Step A: Initial Setup and Configuration
+    evidence_dir = 'cleaning_evidence'
+    if not os.path.exists(evidence_dir):
+        os.makedirs(evidence_dir)
+        print(f"Directory '{evidence_dir}' created.")
+
+    columns_to_visualize = ['C208', 'I339_1', 'whoraT']
+
     codes_to_nan = {
-        'C208': [99],
-        'C301_DIA': [99],
-        'C301_MES': [99],
-        'C301_ANIO': [9999],
-        'C303': [9],
-        'C304': [9],
-        'C305': [9],
-        'C308_COD': [9999],
-        'C309_COD': [9999],
-        'C317A': [9999],
+        'C208': [99], 'C301_DIA': [99], 'C301_MES': [99], 'C301_ANIO': [9999],
+        'C308_COD': [9999], 'C309_COD': [9999], 'C317A': [9999],
         'C318_1': [99], 'C318_2': [99], 'C318_3': [99], 'C318_4': [99],
         'C318_5': [99], 'C318_6': [99], 'C318_7': [99], 'C318_T': [99],
-        'C328_T': [99],
-        'whoraT': [99],
-        'C331': [999],
-        'C339_1': [999999], 'I339_1': [999999],
-        'C341_T': [999999], 'D341_T': [999999],
-        'C342': [999999], 'I342': [999999],
-        'C344': [999999], 'D344': [999999],
-        'C345_1': [999999], 'I345_1': [999999],
-        'C347_T': [999999], 'D347_T': [999999],
-        'C348': [999999], 'I348': [999999],
-        'C350': [999999], 'D350': [999999],
-        'C366_1': [99],
-        'C366_2': [99],
-        'INGTOT': [999999],
-        'INGTOTP': [999999],
+        'C328_T': [99], 'whoraT': [99], 'I339_1': [999999], 'C341_T': [999999],
+        'C342': [999999], 'D344': [999999], 'I345_1': [999999], 'D347_T': [999999],
+        'C348': [999999], 'D350': [999999], 'INGTOT': [999999], 'INGTOTP': [999999],
         'INGTRABW': [999999]
     }
 
+    # Step B: Generate "BEFORE" Visual Evidence
+    print("\n--- Generating visual evidence BEFORE cleaning ---\n")
+    for column in columns_to_visualize:
+        if column in master_df.columns:
+            plt.figure(figsize=(12, 7))
+            sns.histplot(master_df[column].dropna(), kde=False, bins=50)
+            plt.title(f'Distribution of {column} - BEFORE Cleaning', fontsize=16)
+            plt.xlabel(column, fontsize=12)
+            plt.ylabel('Frequency', fontsize=12)
+
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            file_name = f"{column}_before_{timestamp}.png"
+            file_path = os.path.join(evidence_dir, file_name)
+
+            plt.savefig(file_path)
+            plt.close()
+            print(f"Evidence saved to: {file_path}")
+
+    # Step C: Perform Data Sanitization
+    print("\n--- Applying cleaning: Replacing special codes with NaN ---\n")
     for column, codes in codes_to_nan.items():
         if column in master_df.columns:
             master_df[column] = master_df[column].replace(codes, np.nan)
 
-    # --- Data Type Conversion ---
-    numeric_columns = [
-        'C208', 'C301_DIA', 'C301_MES', 'C301_ANIO', 'C308_COD', 'C309_COD',
-        'C317A', 'C318_1', 'C318_2', 'C318_3', 'C318_4', 'C318_5', 'C318_6',
-        'C318_7', 'C318_T', 'C328_T', 'whoraT', 'C331', 'C339_1', 'I339_1',
-        'C341_T', 'D341_T', 'C342', 'I342', 'C344', 'D344', 'C345_1', 'I345_1',
-        'C347_T', 'D347_T', 'C348', 'I348', 'C350', 'D350', 'C366_1', 'C366_2',
-        'INGTOT', 'INGTOTP', 'INGTRABW'
-    ]
+    print("\n--- Enforcing numeric types post-cleaning ---\n")
+    numeric_columns = list(codes_to_nan.keys())
+    # The original code extended with factor_expansion and factor_ajustado, let's keep that
     fa_cols = [col for col in master_df.columns if col.startswith('fa_')]
     numeric_columns.extend(fa_cols)
+    # The user's code did not include these, but they are important from the original logic
+    numeric_columns.extend(['factor_expansion', 'factor_ajustado'])
+
 
     for col in numeric_columns:
         if col in master_df.columns:
             master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
+
+    # Step D: Generate "AFTER" Visual Evidence
+    print("\n--- Generating visual evidence AFTER cleaning ---\n")
+    for column in columns_to_visualize:
+        if column in master_df.columns:
+            plt.figure(figsize=(12, 7))
+            sns.histplot(master_df[column].dropna(), kde=True, bins=50) # .dropna() is key
+            plt.title(f'Distribution of {column} - AFTER Cleaning', fontsize=16)
+            plt.xlabel(column, fontsize=12)
+            plt.ylabel('Frequency', fontsize=12)
+
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            file_name = f"{column}_after_{timestamp}.png"
+            file_path = os.path.join(evidence_dir, file_name)
+
+            plt.savefig(file_path)
+            plt.close()
+            print(f"Evidence saved to: {file_path}")
 
     # --- Unify and Adjust Expansion Factor ---
     master_df['factor_expansion'] = master_df[fa_cols].sum(axis=1)
