@@ -61,11 +61,57 @@ def process_data():
 
     master_df = pd.concat(df_list, ignore_index=True)
 
+    # --- Phase 2.A: Identification and Mapping of Special Codes (Outlier Sanitization) ---
+    codes_to_nan = {
+        'C208': [99],
+        'C301_DIA': [99],
+        'C301_MES': [99],
+        'C301_ANIO': [9999],
+        'C303': [9],
+        'C304': [9],
+        'C305': [9],
+        'C308_COD': [9999],
+        'C309_COD': [9999],
+        'C317A': [9999],
+        'C318_1': [99], 'C318_2': [99], 'C318_3': [99], 'C318_4': [99],
+        'C318_5': [99], 'C318_6': [99], 'C318_7': [99], 'C318_T': [99],
+        'C328_T': [99],
+        'whoraT': [99],
+        'C331': [999],
+        'C339_1': [999999], 'I339_1': [999999],
+        'C341_T': [999999], 'D341_T': [999999],
+        'C342': [999999], 'I342': [999999],
+        'C344': [999999], 'D344': [999999],
+        'C345_1': [999999], 'I345_1': [999999],
+        'C347_T': [999999], 'D347_T': [999999],
+        'C348': [999999], 'I348': [999999],
+        'C350': [999999], 'D350': [999999],
+        'C366_1': [99],
+        'C366_2': [99],
+        'INGTOT': [999999],
+        'INGTOTP': [999999],
+        'INGTRABW': [999999]
+    }
+
+    for column, codes in codes_to_nan.items():
+        if column in master_df.columns:
+            master_df[column] = master_df[column].replace(codes, np.nan)
+
     # --- Data Type Conversion ---
-    master_df['C208'] = pd.to_numeric(master_df['C208'], errors='coerce')
+    numeric_columns = [
+        'C208', 'C301_DIA', 'C301_MES', 'C301_ANIO', 'C308_COD', 'C309_COD',
+        'C317A', 'C318_1', 'C318_2', 'C318_3', 'C318_4', 'C318_5', 'C318_6',
+        'C318_7', 'C318_T', 'C328_T', 'whoraT', 'C331', 'C339_1', 'I339_1',
+        'C341_T', 'D341_T', 'C342', 'I342', 'C344', 'D344', 'C345_1', 'I345_1',
+        'C347_T', 'D347_T', 'C348', 'I348', 'C350', 'D350', 'C366_1', 'C366_2',
+        'INGTOT', 'INGTOTP', 'INGTRABW'
+    ]
     fa_cols = [col for col in master_df.columns if col.startswith('fa_')]
-    for col in fa_cols:
-        master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
+    numeric_columns.extend(fa_cols)
+
+    for col in numeric_columns:
+        if col in master_df.columns:
+            master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
 
     # --- Unify and Adjust Expansion Factor ---
     master_df['factor_expansion'] = master_df[fa_cols].sum(axis=1)
@@ -73,7 +119,10 @@ def process_data():
     master_df.drop(columns=fa_cols, inplace=True)
 
     # --- Phase 2: Data Segregation ---
-    master_df.dropna(subset=['C208'], inplace=True)
+    # Note: We don't need to explicitly drop rows with NaN in 'C208' because
+    # the filtering conditions below (`>= 14` and `< 14`) will not be met
+    # for NaN values, so these rows are automatically excluded from both
+    # `poblacion_trabajo_df` and `poblacion_no_trabajo_df`.
     poblacion_trabajo_df = master_df[master_df['C208'] >= 14].copy()
     poblacion_no_trabajo_df = master_df[master_df['C208'] < 14].copy()
 
