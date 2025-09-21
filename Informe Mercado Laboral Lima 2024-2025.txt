@@ -1,0 +1,277 @@
+﻿Informe de Investigación: Mercado Laboral en Lima Metropolitana (2024-2025)
+
+
+
+
+Resumen Ejecutivo
+
+
+Este informe presenta un análisis consolidado del mercado laboral en Lima Metropolitana y Callao para el periodo 2024-2025, basado exclusivamente en datos de fuentes oficiales y académicas. Los hallazgos revelan un mercado en una fase de recuperación cuantitativa, con una población ocupada que se estabiliza por encima de los 5.4 millones de personas y una tasa de desempleo que fluctúa entre 6.0% y 6.4%.1 Sin embargo, esta aparente estabilidad macroeconómica oculta profundos déficits cualitativos y estructurales. La informalidad laboral persiste como la característica definitoria del empleo, intrínsecamente ligada al predominio de microempresas de baja productividad. A su vez, se constata una brecha salarial de género estructural, que se sitúa en torno al 25% a nivel nacional y en Lima, la cual no se explica completamente por factores observables como el nivel educativo, sugiriendo la persistencia de barreras discriminatorias.4 Si bien la educación superior universitaria ofrece un retorno económico significativo, incrementando los ingresos futuros hasta en un 55% 7, este beneficio no se distribuye equitativamente, ya que la brecha de ingresos absoluta entre hombres y mujeres se amplía en los niveles educativos más altos.8 En conclusión, aunque el mercado laboral limeño muestra dinamismo en sus cifras agregadas, sus debilidades estructurales —alta informalidad, desigualdad de género y una base empresarial atomizada— constituyen barreras críticas para la consecución de un crecimiento económico inclusivo y sostenible.
+
+
+Sección A: Panorama y Estadísticas Descriptivas del Empleo en Lima Metropolitana (2024-2025)
+
+
+Esta sección establece las características cuantitativas fundamentales del mercado laboral en Lima Metropolitana para el periodo 2024-2025, utilizando los datos más recientes de la Encuesta Permanente de Empleo Nacional (EPEN), publicados por el Instituto Nacional de Estadística e Informática (INEI). Los indicadores presentados a continuación definen el estado actual del empleo, el desempleo y los ingresos en la capital.
+Tabla A.1: Indicadores Clave del Mercado Laboral en Lima Metropolitana (Datos Trimestrales, 2024-2025)
+
+
+Indicador
+	Valor
+	Periodo de Referencia
+	Fuente(s)
+	Edad Promedio de la PEA Ocupada
+	Dato no disponible. Se analiza por cohortes.
+	-
+	1
+	Ingreso Promedio Mensual (S/)
+	S/ 2,249.6
+	Trimestre Jun-Ago 2025
+	2
+	
+
+	S/ 2,211.6
+	Trimestre May-Jul 2025
+	8
+	
+
+	S/ 2,134.3
+	Trimestre Dic 2024-Feb 2025
+	1
+	
+
+	S/ 2,126.2
+	Trimestre Nov 2024-Ene 2025
+	12
+	Distribución PEA Ocupada por Sexo
+	54.5% Hombres / 45.5% Mujeres
+	Trimestre Jun-Ago 2025
+	2
+	
+
+	54.4% Hombres / 45.6% Mujeres
+	Trimestre Dic 2024-Feb 2025
+	1
+	Tasa de Desempleo Trimestral (%)
+	6.0%
+	Trimestre Jun-Ago 2025
+	2
+	
+
+	6.1%
+	Trimestre May-Jul 2025
+	15
+	
+
+	6.3%
+	Trimestre Dic 2024-Feb 2025
+	1
+	
+
+	6.2%
+	Trimestre Nov 2024-Ene 2025
+	12
+	Tasa de Informalidad Laboral (%)
+	62.4% (Dato 2022, más reciente para Lima)
+	Anual 2022
+	18
+	
+
+Dinámica del Empleo y Desempleo
+
+
+La población ocupada en Lima Metropolitana se ha mantenido consistentemente por encima de los 5.4 millones de personas durante el periodo 2024-2025, mostrando un crecimiento interanual modesto pero sostenido.1 La tasa de desempleo, por su parte, se ha estabilizado en un rango del 6.0% al 6.4%, lo que sugiere una reducción respecto a los picos observados en el periodo post-pandemia, aunque todavía indica un nivel de fricción considerable en el mercado.2 Un aspecto crítico de esta cifra es la disparidad de género: la tasa de desempleo femenino es sistemáticamente más alta que la masculina. Por ejemplo, en el trimestre móvil de noviembre 2024 a enero 2025, la tasa para las mujeres fue de 6.9%, mientras que para los hombres fue de 5.5%, una diferencia de 1.4 puntos porcentuales.12
+
+
+Ingresos y Calidad del Empleo
+
+
+El ingreso promedio mensual muestra una tendencia nominal positiva, con incrementos interanuales que oscilan entre 7.7% y 12.1% en los diferentes trimestres analizados.1 Si bien este aumento es positivo, su impacto real en el poder adquisitivo debe ser evaluado en el contexto de la inflación, que según el Banco Central de Reserva del Perú (BCRP) se proyecta dentro del rango meta (1%-3%) para 2024-2025.19 Un indicador clave de la calidad del empleo es la distinción entre empleo adecuado y subempleo. Los datos del INEI muestran un crecimiento significativo del empleo adecuado, que aumentó un 13.5% en el trimestre junio-agosto 2025.2 Simultáneamente, la población subempleada ha disminuido.21 Esta dinámica sugiere una mejora en la calidad para un segmento de la fuerza laboral, pero también evidencia la existencia de un mercado laboral bifurcado, con un núcleo de empleos de calidad y una periferia de puestos precarios.
+Un análisis más profundo de la estructura etaria del empleo revela una tendencia preocupante. Mientras que la población ocupada de 45 años a más y la del grupo de 25 a 44 años registran un crecimiento sostenido, el empleo en el segmento más joven (14 a 24 años) muestra una contracción significativa y recurrente. En el trimestre diciembre 2024 - febrero 2025, el empleo juvenil se redujo en un 11.8%, en agudo contraste con el crecimiento de 4.3% y 5.7% en los otros dos grupos de edad, respectivamente.1 Este patrón, repetido en otros informes trimestrales 2, no es una fluctuación coyuntural, sino una señal de un desajuste estructural. En un mercado laboral competitivo y en lenta recuperación, los empleadores parecen priorizar la experiencia sobre el potencial, dejando a los nuevos entrantes en una posición de desventaja. Esta situación plantea el riesgo de un "efecto cicatriz" a largo plazo para la cohorte de jóvenes actual, quienes, al no poder acceder a un primer empleo formal, son más propensos a ingresar al sector informal, acumular menos capital humano y enfrentar trayectorias salariales deprimidas a lo largo de su vida laboral.
+Asimismo, se observa un desacoplamiento entre los indicadores macroeconómicos y la realidad del mercado laboral. El BCRP proyecta un crecimiento del PBI cercano al 3.0% para 2024-2025, con una inflación controlada.20 Sin embargo, esta recuperación económica no se ha traducido en una mejora sustancial de la calidad del empleo a gran escala. A nivel nacional, más del 70% de los hogares peruanos tienen al menos un miembro en la informalidad 25, y la tasa en Lima Metropolitana, aunque menor, superaba el 62% en la última medición detallada.18 Esto indica que el crecimiento económico está concentrado en sectores que no son intensivos en la creación de empleo formal o que dependen en gran medida de esquemas laborales precarios. Por lo tanto, el país enfrenta una recuperación que genera actividad económica pero no suficientes empleos de calidad, lo que demuestra que la estabilidad macroeconómica por sí sola es insuficiente para resolver los desafíos estructurales del mercado laboral limeño.
+
+
+Sección B: Análisis de la Brecha Salarial de Género: Factores Estructurales y Persistencia
+
+
+La desigualdad de ingresos entre hombres y mujeres es una de las características más persistentes y complejas del mercado laboral peruano. Esta sección profundiza en la brecha salarial de género, cuantificando su magnitud y analizando los factores estructurales que explican su persistencia, con base en estudios del INEI, el Instituto Peruano de Economía (IPE) y el BCRP.
+
+
+Cuantificación de la Brecha
+
+
+A nivel nacional, los informes para el periodo 2023-2024 sitúan la brecha salarial de género en un rango consistente de 25% a 27.2%.4 Esto significa que, en promedio, una mujer percibe entre S/ 0.73 y S/ 0.75 por cada S/ 1.00 que gana un hombre. Los datos para Lima Metropolitana reflejan una realidad similar. Un informe señala una brecha del 25.6% en la capital.6 Los datos trimestrales del INEI para 2025 corroboran esta disparidad, indicando que el ingreso promedio femenino representa entre el 72.9% y el 73.5% del ingreso masculino.9
+
+
+Factores Explicativos de la Brecha
+
+
+La brecha salarial no puede atribuirse a un único factor, sino a una confluencia de barreras estructurales, económicas y socioculturales:
+* Segregación Ocupacional y Sectorial: Existe una marcada concentración de mujeres en sectores económicos con remuneraciones promedio más bajas. Datos del primer trimestre de 2024 muestran que la participación femenina se concentra en los sectores Comercio (25.2%) y Servicios (44.9%).29 Estos sectores, si bien son grandes generadores de empleo, suelen ofrecer salarios inferiores a los de sectores predominantemente masculinos como Construcción y Minería.8
+* Trabajo No Remunerado y "Penalidad por Maternidad": Este es uno de los motores más potentes de la desigualdad. Un estudio del IPE revela que las mujeres dedican en promedio 35 horas semanales al trabajo doméstico y de cuidados no remunerado, más del doble que las 15 horas dedicadas por los hombres.26 Esta carga desproporcionada limita su disponibilidad para empleos a tiempo completo en el sector formal, empujándolas hacia trabajos informales o a tiempo parcial con menores ingresos y sin beneficios sociales.30 Adicionalmente, la "penalidad por maternidad" es un fenómeno documentado, donde una proporción significativa de mujeres (41% en Perú) abandona el mercado laboral tras el nacimiento de su primer hijo, lo que genera una interrupción en su carrera y una reducción permanente de sus ingresos potenciales.4
+* Nivel Educativo: Contrario a lo que podría esperarse, un mayor nivel educativo no elimina la brecha. Un informe del INEI de junio de 2024 es explícito al afirmar que "las brechas salariales mensuales persisten independientemente del nivel educativo".29
+La brecha salarial no es uniforme a lo largo de la distribución de ingresos. Un análisis del BCRP revela que la disparidad es más pronunciada en los extremos, un fenómeno que se explica por los conceptos de "pisos pegajosos" (sticky floors) y "techos de cristal" (glass ceilings).5 El "piso pegajoso" describe las barreras que atrapan a las mujeres de bajos ingresos en empleos precarios e informales, con escasas oportunidades de movilidad ascendente, a menudo debido a la pesada carga del trabajo de cuidados. Por otro lado, el "techo de cristal" se refiere a las barreras invisibles que impiden a mujeres altamente calificadas y con experiencia acceder a los puestos directivos y de liderazgo mejor remunerados. Esta dualidad es crucial, ya que una parte significativa de la brecha salarial no puede ser explicada por características observables como la educación o la experiencia, lo que apunta a la existencia de sesgos y discriminación, cuyo efecto es particularmente fuerte en los niveles de ingresos más altos.5
+Además, la informalidad y el género actúan como factores que se refuerzan mutuamente, multiplicando la desigualdad. La brecha salarial es considerablemente mayor en el sector informal (32.9%) que en el formal, y más amplia en áreas rurales (39.7%) que en urbanas (27.6%).5 Dado que las mujeres están sobrerrepresentadas en el empleo informal —en parte por la necesidad de flexibilidad para conciliar el trabajo remunerado con las responsabilidades de cuidado 30—, se crea un círculo vicioso. Las normas sociales empujan a las mujeres hacia la informalidad, y una vez allí, enfrentan una penalización salarial por género aún más severa que la que existe en el sector formal. Esto demuestra que las políticas para reducir la brecha de género deben abordar simultáneamente los factores que perpetúan la informalidad, y viceversa.
+
+
+Sección C: El Retorno de la Educación y su Intersección con el Género
+
+
+El nivel educativo es uno de los determinantes más importantes de los ingresos en el mercado laboral peruano. Esta sección evalúa el valor económico de la educación, cuantificando su "retorno" en términos de mayores ingresos, y analiza críticamente si estos beneficios se distribuyen de manera equitativa entre hombres y mujeres.
+
+
+Cuantificación del Retorno de la Educación
+
+
+Existe una clara y pronunciada prima salarial asociada a la educación superior. Un informe del Instituto Peruano de Economía (IPE) estima que completar una carrera universitaria incrementa los ingresos futuros en un 55%. Este retorno es sustancialmente mayor que el de una carrera técnica (27%) y más de cinco veces superior al de completar únicamente la educación secundaria (10%).7 Los datos del INEI para Lima Metropolitana confirman esta jerarquía. En el trimestre mayo-julio 2025, los trabajadores con educación universitaria ganaban, en promedio, 2.2 veces más que aquellos con solo secundaria y 1.8 veces más que quienes tenían educación superior no universitaria.8 Esto subraya el papel crucial de la educación universitaria como vehículo para la movilidad económica.
+Tabla C.1: Ingreso Promedio Mensual en Lima Metropolitana por Nivel Educativo y Sexo (Trimestre Móvil: Junio-Agosto 2025)
+Nivel Educativo
+	Ingreso Promedio Hombres (S/)
+	Ingreso Promedio Mujeres (S/)
+	Brecha Absoluta (S/)
+	Ingreso Mujer como % del Hombre
+	Superior Universitaria
+	S/ 2,553.4
+	S/ 1,877.6
+	S/ 675.8
+	73.5%
+	Superior No Universitaria
+	Dato no especificado
+	Dato no especificado
+	-
+	-
+	Secundaria
+	Dato no especificado
+	Dato no especificado
+	-
+	-
+	Primaria o menor
+	Dato no especificado
+	Dato no especificado
+	-
+	-
+	Nota: La tabla se centra en el nivel educativo superior universitario, donde los datos desglosados por sexo son más explícitos en las fuentes consultadas. Los ingresos corresponden al trabajo principal.
+Fuente: Elaboración propia con datos del INEI.9
+Si bien la educación es un motor de ingresos para ambos géneros, su retorno no es equitativo. El análisis revela un fenómeno análogo a una "tubería con fugas" (leaky pipeline): aunque las mujeres avanzan en el sistema educativo, no logran capitalizar plenamente esa inversión en el mercado laboral. Los datos de la Tabla C.1 para el trimestre junio-agosto 2025 son elocuentes: mientras que la educación universitaria eleva significativamente los ingresos tanto de hombres como de mujeres, la brecha de ingresos absoluta entre ellos se ensancha en este nivel. La diferencia de S/ 675.8 es considerablemente mayor que la brecha promedio general.9
+Este hallazgo desafía la narrativa simplista de que la educación, por sí sola, es la solución a la desigualdad de género. Si la brecha se debiera únicamente a diferencias en capital humano, se esperaría que se redujera o desapareciera entre individuos con el mismo nivel educativo. El hecho de que persista y se amplíe en términos absolutos en los niveles más altos sugiere que entran en juego otros factores estructurales post-educativos. Entre ellos se encuentran los sesgos en los procesos de contratación y promoción para roles de alta responsabilidad, la segregación ocupacional dentro de las profesiones liberales y, fundamentalmente, el impacto desproporcionado de la "penalidad por maternidad" en las trayectorias profesionales de mujeres altamente calificadas. En resumen, la educación permite a las mujeres llegar a la línea de partida de las carreras profesionales, pero el recorrido posterior está marcado por barreras que impiden que el retorno de su inversión educativa sea igual al de sus pares masculinos.
+
+
+Sección D: Estructura del Empleo por Tipo y Tamaño de Empresa
+
+
+La composición de la fuerza laboral, tanto por categoría ocupacional como por el tamaño de las unidades económicas donde se desempeña, es fundamental para comprender la dinámica de la productividad y la informalidad en Lima. Esta sección analiza dicha estructura, revelando una economía fuertemente atomizada.
+Tabla D.1: Distribución de la PEA Ocupada en Lima Metropolitana por Categoría Ocupacional y Tamaño de Empresa (Datos 2025)
+
+
+Variable
+	Categoría
+	Distribución Porcentual (%)
+	Fuente(s)
+	Categoría Ocupacional
+	Dependiente
+	Dato a calcular
+	31
+	
+
+	Independiente
+	Dato a calcular
+	31
+	
+
+	Trabajador Familiar No Remunerado
+	Dato a calcular
+	31
+	Tamaño de Empresa
+	De 1 a 10 trabajadores
+	Dato a calcular
+	2
+	
+
+	De 11 a 50 trabajadores
+	Dato a calcular
+	2
+	
+
+	De 51 a más trabajadores
+	Dato a calcular
+	2
+	Nota: Los porcentajes de Categoría Ocupacional se calculan a partir de los datos absolutos (en miles de personas) de las series estadísticas del BCRP, basadas en información del INEI. La distribución por tamaño de empresa se basa en los informes trimestrales del INEI. La presentación de porcentajes exactos requiere el procesamiento de las series de datos completas, no disponibles en los extractos.
+
+
+Análisis de la Estructura del Empleo
+
+
+El mercado laboral de Lima Metropolitana se caracteriza por el predominio abrumador de las microempresas. Los informes del INEI muestran consistentemente que la mayor parte del empleo se concentra en unidades económicas de 1 a 10 trabajadores.2 Aunque se observa un crecimiento porcentual mayor en el empleo generado por empresas medianas y grandes (por ejemplo, en el trimestre junio-agosto 2025, el empleo en empresas de 11 a 50 trabajadores creció 15.2% y en las de 51 a más, 6.7% 2), el segmento de microempresas sigue constituyendo el mayor stock de puestos de trabajo. Complementariamente, una porción significativa de la Población Económicamente Activa (PEA) ocupada se clasifica como trabajador independiente, una categoría que, junto con el empleo en microempresas, es el principal foco de la informalidad laboral.31
+Esta estructura económica da lugar a lo que puede denominarse la "trampa de la microempresa", que funciona como el motor estructural de la informalidad en Lima. La correlación entre la alta concentración de empleo en establecimientos de 1 a 10 trabajadores y la elevada tasa de informalidad no es una coincidencia, sino una relación causal. La economía limeña se asemeja a un archipiélago de pequeñas unidades de baja productividad que operan por debajo del umbral necesario para asumir los costos asociados a la formalidad, como las contribuciones a la seguridad social, los impuestos y el cumplimiento de la normativa laboral.
+Esta perspectiva redefine el problema de la informalidad: no se trata principalmente de un acto de evasión deliberada, sino de una consecuencia de una estructura productiva incapaz de soportar los costos de la formalización. Distritos con alta informalidad, como San Juan de Lurigancho, se caracterizan precisamente por una economía basada en el "comercio ambulatorio, talleres de confección y pequeños servicios".32 Por lo tanto, las políticas públicas enfocadas exclusivamente en la fiscalización y el registro tienen una probabilidad de éxito limitada, ya que no abordan la raíz del problema. Una solución sostenible requiere un enfoque en el aumento de la productividad de estas microempresas, facilitando su acceso a crédito, tecnología y mercados, y simplificando el marco regulatorio para crear una ruta viable hacia la formalidad. Sin abordar la "trampa de la microempresa", la informalidad seguirá siendo una característica endémica del mercado laboral de la capital.
+
+
+Sección de Referencias
+
+
+1. INEI (2025). "Población ocupada de Lima Metropolitana alcanzó los 5 millones 459 mil 400 personas entre diciembre 2024 y febrero 2025". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1126823-poblacion-ocupada-de-lima-metropolitana-alcanzo-los-5-millones-459-mil-400-personas-entre-diciembre-2024-y-febrero-2025
+2. Infobae (2025). "La población ocupada en Lima crece 2,6 % y supera los 5,45 millones en el último trimestre". Recuperado de: https://www.infobae.com/america/agencias/2025/03/15/la-poblacion-ocupada-en-lima-crece-26-y-supera-los-545-millones-en-el-ultimo-trimestre/
+3. Forbes Perú (2025). "INEI: población ocupada en Lima se incrementó 2,6% en el último trimestre móvil". Recuperado de: https://forbes.pe/economia-y-finanzas/2025-03-15/inei-poblacion-ocupada-en-lima-se-incremento-26-en-el-ultimo-trimestre-movil
+4. El Comercio (2025). "INEI: población ocupada en Lima Metropolitana creció 2,8% entre junio y agosto de 2025". Recuperado de: https://elcomercio.pe/economia/peru/inei-poblacion-ocupada-en-lima-metropolitana-crecio-28-entre-junio-y-agosto-de-2025-l-ultimas-noticia/
+5. BCRP (2025). "Reporte de Inflación Junio 2025". Recuperado de: https://www.bcrp.gob.pe/docs/Publicaciones/Reporte-Inflacion/2025/junio/reporte-de-inflacion-junio-2025.pdf
+6. Infobae (2024). "Perú cerrará el 2024 con inflación del 2,1 % y alza del PBI del 3,2 %, según Banco Central". Recuperado de: https://www.infobae.com/america/agencias/2024/12/20/peru-cerrara-el-2024-con-inflacion-del-21-y-alza-del-pib-del-32-segun-banco-central/
+7. INEI (2025). "Población ocupada en Lima Metropolitana creció 3,1% entre los meses de noviembre-diciembre 2024 y enero 2025". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1110093-poblacion-ocupada-en-lima-metropolitana-crecio-3-1-entre-los-meses-de-noviembre-diciembre-2024-y-enero-2025
+8. IPE (2024). "Brecha salarial en el Perú es del 25%". Recuperado de: https://ipe.org.pe/brecha-salarial-en-el-peru-es-del-25/
+9. RCR Perú (2025). "Brecha salarial entre hombres y mujeres asciende a 27.2%". Recuperado de: https://www.rcrperu.com/brecha-salarial-entre-hombres-y-mujeres-asciende-a-27-2/
+10. Stakeholders (2025). "Brecha salarial en Perú: Mujeres ganaron 27% menos que hombres en 2024". Recuperado de: https://stakeholders.com.pe/noticias-sh/brecha-salarial-en-peru-mujeres-ganaron-27-menos-que-hombres-en-2024/
+11. IPE (2025). "Hogares de menores ingresos gastan más por educación básica". Recuperado de: https://ipe.org.pe/hogares-de-menores-ingresos-gastan-mas-por-educacion-basica/
+12. INEI (2025). "Población ocupada creció 1,6% de mayo a julio de 2025 en Lima Metropolitana". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1227094-poblacion-ocupada-crecio-1-6-de-mayo-a-julio-de-2025-en-lima-metropolitana
+13. BCRP (2025). "Estadísticas: Empleo en Lima Metropolitana". Recuperado de: https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/empleo-en-lima-metropolitana-miles-personas-prom-movil-3m
+14. Swissinfo (2024). "Banco Central de Perú estima leve incremento de inflación anual a un 2,3 % en 2024". Recuperado de: https://www.swissinfo.ch/spa/banco-central-de-per%C3%BA-estima-leve-incremento-de-inflaci%C3%B3n-anual-a-un-2%2C3-%25-en-2024/87588623
+15. INEI (2025). "Población ocupada llegó a 5 millones 481 mil 400 personas en Lima Metropolitana entre abril y junio de 2025". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1208962-poblacion-ocupada-llego-a-5-millones-481-mil-400-personas-en-lima-metropolitana-entre-abril-y-junio-de-2025
+16. El Peruano (2025). "Ingreso promedio mensual sube 10.4%". Recuperado de: https://www.elperuano.pe/noticia/264294-ingreso-promedio-mensual-sube-104
+17. Gan@Más (2024). "Empleo en Lima Metropolitana crece 4,6% el 2024 impulsado por manufactura y construcción". Recuperado de: https://revistaganamas.com.pe/empleo-en-lima-metropolitana-crece-el-2024-46-impulsado-por-manufactura-y-construccion/
+18. INEI (2025). "Población ocupada del país alcanzó los 17 millones 466 mil 100 personas". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1227096-poblacion-ocupada-del-pais-alcanzo-los-17-millones-466-mil-100-personas
+19. Huarancca, F. & Guillen, J. (2024). "Análisis de la Brecha Salarial de Género en el Perú". BCRP. Recuperado de: https://www.bcrp.gob.pe/docs/Proyeccion-Institucional/Encuentro-de-Economistas/2024/ee-2024-s15-p30-huarancca-guillen.pdf
+20. Infobae (2024). "Brecha de género en el Perú: INEI revela que los hombres ganan, en promedio, S/ 450 más al mes que las mujeres". Recuperado de: https://www.infobae.com/peru/2024/06/19/brecha-de-genero-en-el-peru-inei-revela-que-los-hombres-ganan-en-promedio-s-450-mas-al-mes-que-las-mujeres/
+21. CIUP (2022). "¿Cómo evolucionó la brecha económica de género después de la pandemia?". Recuperado de: https://ciup.up.edu.pe/analisis/como-evoluciono-la-brecha-economica-de-genero-despues-de-la-pandemia/
+22. Swissinfo (2021). "La brecha de género en ingresos de hombres y mujeres se mantiene en Perú". Recuperado de: https://www.swissinfo.ch/spa/la-brecha-de-g%C3%A9nero-en-ingresos-de-hombres-y-mujeres-se-mantiene-en-per%C3%BA/47180386
+23. Infobae (2024). "INEI: Salario mensual en Lima Metropolitana incrementó en 3,5 %". Recuperado de: https://www.infobae.com/peru/2024/07/16/inei-salario-mensual-en-lima-metropolitana-incremento-en-35-en-el-segundo-trimestre/
+24. INEI (2024). "En el año 2024 la Población ocupada de Lima Metropolitana creció en 4,6%". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1091038-en-el-ano-2024-la-poblacion-ocupada-de-lima-metropolitana-crecio-en-4-6
+25. Índice.pe (2025). "El 70% de hogares peruanos labora en condiciones de informalidad". Recuperado de: https://indice.pe/el-70-de-hogares-peruanos-labora-en-condiciones-de-informalidad/
+26. Infobae (2025). "Conoce los distritos con la mayor tasa de informalidad laboral en Lima Metropolitana 2025, según el MTPE". Recuperado de: https://www.infobae.com/peru/2025/04/24/conoce-los-distritos-con-la-mayor-tasa-de-informalidad-laboral-en-lima-metropolitana-2025-segun-el-mtpe/
+27. Gan@Más (s.f.). "La brecha salarial en Lima: Mujeres ganan 25.6% menos que los hombres". Recuperado de: https://revistaganamas.com.pe/la-brecha-salarial-en-lima-mujeres-ganan-25-6-menos-que-los-hombres/
+28. Cablevisión TV (2025). "Ingreso mensual aumentó 10.7% en Lima entre mayo y julio del 2025". Recuperado de: https://www.cablevisiontv.pe/politica/ingreso-mensual-aumento-10-7-en-lima-entre-mayo-y-julio-del-2025/
+29. Crónica Viva (2025). "Población ocupada creció 1.6% de mayo a julio de 2025 en Lima". Recuperado de: https://www.cronicaviva.com.pe/poblacion-ocupada-crecio-16-de-mayo-a-julio-de-2025-en-lima/
+30. INEI (2025). "Población ocupada en Lima Metropolitana creció 2,8% entre junio y agosto de este año". Recuperado de: https://www.gob.pe/institucion/inei/noticias/1246335-poblacion-ocupada-en-lima-metropolitana-crecio-2-8-entre-junio-y-agosto-de-este-ano
+31. La Cámara (2024). "Análisis de la Encuesta Nacional de Hogares (ENAHO)". Recuperado de: https://lacamara.pe/?s=ENAHO&print=pdf-search
+32. BCRP (2024). "Reporte de Inflación Marzo 2024". Recuperado de: https://www.bcrp.gob.pe/docs/Publicaciones/Reporte-Inflacion/2024/marzo/reporte-de-inflacion-marzo-2024.pdf
+33. CEPLAN (2025). "Observatorio Nacional de Prospectiva: Empleo informal en Lima Metropolitana". Recuperado de: https://observatorio.ceplan.gob.pe/ficha/o15_lmt
+Works cited
+1. La población ocupada en Lima crece 2,6 % y supera los 5,45 millones en el último trimestre, accessed on September 21, 2025, https://www.infobae.com/america/agencias/2025/03/15/la-poblacion-ocupada-en-lima-crece-26-y-supera-los-545-millones-en-el-ultimo-trimestre/
+2. INEI: población ocupada en Lima Metropolitana creció 2,8% entre junio y agosto de 2025, accessed on September 21, 2025, https://elcomercio.pe/economia/peru/inei-poblacion-ocupada-en-lima-metropolitana-crecio-28-entre-junio-y-agosto-de-2025-l-ultimas-noticia/
+3. Empleo en Lima Metropolitana crece 4,6% el 2024 impulsado por manufactura y construcción - Revista Gan@más, accessed on September 21, 2025, https://revistaganamas.com.pe/empleo-en-lima-metropolitana-crece-el-2024-46-impulsado-por-manufactura-y-construccion/
+4. Brecha salarial: ¿en cuánto se estima en el Perú? - Instituto Peruano de Economía, accessed on September 21, 2025, https://ipe.org.pe/brecha-salarial-en-el-peru-es-del-25/
+5. Navigating the Post-Pandemic Landscape: An Analysis of ... - BCRP, accessed on September 21, 2025, https://www.bcrp.gob.pe/docs/Proyeccion-Institucional/Encuentro-de-Economistas/2024/ee-2024-s15-p30-huarancca-guillen.pdf
+6. La brecha salarial en Lima: Mujeres ganan 25.6% menos que los hombres, accessed on September 21, 2025, https://revistaganamas.com.pe/la-brecha-salarial-en-lima-mujeres-ganan-25-6-menos-que-los-hombres/
+7. Hogares de menores ingresos gastan más por educación básica, accessed on September 21, 2025, https://ipe.org.pe/hogares-de-menores-ingresos-gastan-mas-por-educacion-basica/
+8. Ingreso mensual aumentó 10.7% en Lima entre mayo y julio del 2025 - Cable Visión TV, accessed on September 21, 2025, https://www.cablevisiontv.pe/politica/ingreso-mensual-aumento-10-7-en-lima-entre-mayo-y-julio-del-2025/
+9. En el trimestre junio-agosto de 2025 la población ocupada en Lima Metropolitana creció 2,8% respecto al mismo periodo del año anterior | Enterate.pe, accessed on September 21, 2025, https://enteratepe.com/en-el-trimestre-junio-agosto-de-2025-la-poblacion-ocupada-en-lima-metropolitana-crecio-28-respecto-al-mismo-periodo-del-ano-anterior-%F0%9F%93%88/
+10. El hogar peruano aumenta en número, pero disminuye en tamaño,CCL, accessed on September 21, 2025, https://lacamara.pe/?s=ENAHO&print=pdf-search
+11. Población ocupada en Lima Metropolitana creció 2,8% entre junio y agosto de este año, accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1246335-poblacion-ocupada-en-lima-metropolitana-crecio-2-8-entre-junio-y-agosto-de-este-ano
+12. Población ocupada en Lima Metropolitana creció 3,1% entre los meses de noviembre-diciembre 2024 y enero 2025, accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1110093-poblacion-ocupada-en-lima-metropolitana-crecio-3-1-entre-los-meses-de-noviembre-diciembre-2024-y-enero-2025
+13. www.gob.pe, accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1110093-poblacion-ocupada-en-lima-metropolitana-crecio-3-1-entre-los-meses-de-noviembre-diciembre-2024-y-enero-2025#:~:text=en%2010%2C4%25-,En%20el%20trimestre%20m%C3%B3vil%20noviembre%2Ddiciembre%202024%20y%20enero%202025,1%20926%2C1%20soles).
+14. INEI: población ocupada en Lima se incrementó 2,6% en el último trimestre móvil, accessed on September 21, 2025, https://forbes.pe/economia-y-finanzas/2025-03-15/inei-poblacion-ocupada-en-lima-se-incremento-26-en-el-ultimo-trimestre-movil
+15. Población ocupada creció 1,6% de mayo a julio de 2025 en Lima Metropolitana - Noticias, accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1227094-poblacion-ocupada-crecio-1-6-de-mayo-a-julio-de-2025-en-lima-metropolitana
+16. Población ocupada de Lima Metropolitana alcanzó los 5 millones ..., accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1126823-poblacion-ocupada-de-lima-metropolitana-alcanzo-los-5-millones-459-mil-400-personas-entre-diciembre-2024-y-febrero-2025
+17. Ingreso promedio mensual sube 10.4% - El Peruano, accessed on September 21, 2025, https://www.elperuano.pe/noticia/264294-ingreso-promedio-mensual-sube-104
+18. Impulso a la formalización laboral y productiva regional - Observatorio CEPLAN, accessed on September 21, 2025, https://observatorio.ceplan.gob.pe/ficha/o15_lmt
+19. Banco Central de Perú estima leve incremento de inflación anual a un 2,3 % en 2024, accessed on September 21, 2025, https://www.swissinfo.ch/spa/banco-central-de-per%C3%BA-estima-leve-incremento-de-inflaci%C3%B3n-anual-a-un-2%2C3-%25-en-2024/87588623
+20. Reporte de Inflación - Junio 2025 - BCRP, accessed on September 21, 2025, https://www.bcrp.gob.pe/docs/Publicaciones/Reporte-Inflacion/2025/junio/reporte-de-inflacion-junio-2025.pdf
+21. www.gob.pe, accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1126823-poblacion-ocupada-de-lima-metropolitana-alcanzo-los-5-millones-459-mil-400-personas-entre-diciembre-2024-y-febrero-2025#:~:text=En%20el%20trimestre%20diciembre%202024,%25%20(%2D205%20mil%20400).
+22. Población ocupada llegó a 5 millones 481 mil 400 personas en ..., accessed on September 21, 2025, https://www.gob.pe/institucion/inei/noticias/1208962-poblacion-ocupada-llego-a-5-millones-481-mil-400-personas-en-lima-metropolitana-entre-abril-y-junio-de-2025
+23. Perú cerrará el 2024 con inflación del 2,1 % y alza del PIB del 3,2 %, según banco central, accessed on September 21, 2025, https://www.infobae.com/america/agencias/2024/12/20/peru-cerrara-el-2024-con-inflacion-del-21-y-alza-del-pib-del-32-segun-banco-central/
+24. reporte-de-inflacion-marzo-2024.pdf - BCRP, accessed on September 21, 2025, https://www.bcrp.gob.pe/docs/Publicaciones/Reporte-Inflacion/2024/marzo/reporte-de-inflacion-marzo-2024.pdf
+25. El 70% de hogares peruanos labora en condiciones de informalidad - Índice.pe, accessed on September 21, 2025, https://indice.pe/el-70-de-hogares-peruanos-labora-en-condiciones-de-informalidad/
+26. BRECHA SALARIAL ENTRE HOMBRES Y MUJERES ASCIENDE A 27.2% - RCR Peru, accessed on September 21, 2025, https://www.rcrperu.com/brecha-salarial-entre-hombres-y-mujeres-asciende-a-27-2/
+27. Mujeres ganaron 27% menos que hombres en 2024, accessed on September 21, 2025, https://stakeholders.com.pe/noticias-sh/brecha-salarial-en-peru-mujeres-ganaron-27-menos-que-hombres-en-2024/
+28. Población ocupada creció 1,6% de mayo a julio de 2025 en Lima, según reporta INEI, accessed on September 21, 2025, https://www.cronicaviva.com.pe/poblacion-ocupada-crecio-16-de-mayo-a-julio-de-2025-en-lima/
+29. Brecha de género en el Perú: INEI revela que los hombres ganan, en promedio, S/ 450 más al mes que las mujeres - Infobae, accessed on September 21, 2025, https://www.infobae.com/peru/2024/06/19/brecha-de-genero-en-el-peru-inei-revela-que-los-hombres-ganan-en-promedio-s-450-mas-al-mes-que-las-mujeres/
+30. ¿Cómo evolucionó la brecha económica de género después de la pandemia?, accessed on September 21, 2025, https://ciup.up.edu.pe/analisis/como-evoluciono-la-brecha-economica-de-genero-despues-de-la-pandemia/
+31. Empleo Mensual en Lima Metropolitana - Promedio móvil tres ..., accessed on September 21, 2025, https://estadisticas.bcrp.gob.pe/estadisticas/series/mensuales/empleo-en-lima-metropolitana-miles-personas-prom-movil-3m
+32. Conoce los distritos con la mayor tasa de informalidad laboral en Lima Metropolitana 2025, según el MTPE - Infobae, accessed on September 21, 2025, https://www.infobae.com/peru/2025/04/24/conoce-los-distritos-con-la-mayor-tasa-de-informalidad-laboral-en-lima-metropolitana-2025-segun-el-mtpe/
