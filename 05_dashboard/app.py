@@ -202,25 +202,25 @@ with tab3:
         st.subheader("Predicción en Lote (Ejemplo)")
         st.write("A continuación se muestra una muestra de los datos con la probabilidad de informalidad predicha por el modelo.")
 
-        sample_df = df_filtrado.sample(min(50, len(df_filtrado)))
+        if not df_filtrado.empty:
+            sample_df = df_filtrado.sample(min(50, len(df_filtrado))).copy()
 
-        # Prepare data for prediction (One-Hot Encoding)
-        features = ['Grupo_Edad', 'Sexo', 'Nivel_Educativo']
-        X_sample = pd.get_dummies(sample_df[features], drop_first=True)
+            # Features the model expects (raw categorical data)
+            features = ['Grupo_Edad', 'Sexo', 'Nivel_Educativo']
+            X_predict = sample_df[features].copy()
 
-        # Ensure all model columns are present
-        model_cols = model.feature_names_in_
-        for col in model_cols:
-            if col not in X_sample.columns:
-                X_sample[col] = 0
-        X_sample = X_sample[model_cols] # Reorder to match model's expected input
+            # Fill NaNs with a placeholder string to prevent errors in the pipeline
+            for col in features:
+                X_predict[col] = X_predict[col].astype(str).replace('nan', 'Desconocido')
 
-        # Predict probabilities
-        pred_probs = model.predict_proba(X_sample)[:, 1]
+            # Predict probabilities
+            pred_probs = model.predict_proba(X_predict)[:, 1]
 
-        # Display results
-        sample_df['Probabilidad_Informalidad'] = np.round(pred_probs * 100, 2)
-        st.dataframe(sample_df[['Sexo', 'Edad', 'Nivel_Educativo', 'Probabilidad_Informalidad']].style.format({'Probabilidad_Informalidad': '{:.2f}%'}))
+            # Display results
+            sample_df['Probabilidad_Informalidad'] = np.round(pred_probs * 100, 2)
+            st.dataframe(sample_df[['Sexo', 'Edad', 'Nivel_Educativo', 'Probabilidad_Informalidad']].style.format({'Probabilidad_Informalidad': '{:.2f}%'}))
+        else:
+            st.warning("No hay datos en la selección actual para mostrar un ejemplo de predicción.")
 
         st.markdown("---")
 
@@ -244,16 +244,8 @@ with tab3:
                     'Nivel_Educativo': [nivel_educativo_input]
                 })
 
-                # One-hot encode the input
-                input_encoded = pd.get_dummies(input_data, drop_first=True)
-
-                # Align columns with the model's training columns
-                final_input = pd.DataFrame(columns=model_cols)
-                final_input = pd.concat([final_input, input_encoded], ignore_index=True).fillna(0)
-                final_input = final_input[model_cols]
-
-                # Predict probability
-                prediction = model.predict_proba(final_input)[0, 1]
+                # The model pipeline expects raw categorical data. No get_dummies needed.
+                prediction = model.predict_proba(input_data)[0, 1]
                 prob_percent = prediction * 100
 
                 # Display result
