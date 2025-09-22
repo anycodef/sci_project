@@ -1,0 +1,2002 @@
+[
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 70000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 43970.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 26025.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 65
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 28000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 71
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 20450.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 55
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 20000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 50
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15217.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12400.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 30
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 17000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 14729.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 70
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 18000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 18000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 50
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 14000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 17500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 60
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 55
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 52
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 13200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 16000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 67
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 65
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 15600.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 15600.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 53
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 15250.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 72
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 46
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 15000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 21
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 54
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 15000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 44
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 14000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 14000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 50
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 10990.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 13040.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 70
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 46
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior no universitaria incompleta",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 10
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12500.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 32
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 13000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 64
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 90
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 32
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 30
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 61
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 12000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 38
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 11600.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 56
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 11258.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 32
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8600.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 54
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 41
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 11000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 28
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9800.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 59
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8475.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 44
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 72
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 75
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 60
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 60
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "18-24",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 51
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 49
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 47
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 10000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 60
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9800.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 54
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 60
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 7779.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 112
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 68
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria incompleta",
+        "ingreso": 7083.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 66
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 52
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 9000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 9000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 63
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 9000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 56
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 6800.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6300.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 30
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6600.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 51
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 90
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 55
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6330.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior no universitaria incompleta",
+        "ingreso": 8637.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 66
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 8610.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 70
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7033.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8270.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 35
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 8200.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 84
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 54
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 8085.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 56
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 71
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 94
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior no universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 8000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 50
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7700.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 24
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7700.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 5865.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6570.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 6500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 38
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 5600.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 72
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6800.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 46
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 20
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 34
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 54
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7500.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7500.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 43
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria incompleta",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 48
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 52
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 36
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 50
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "65+",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 6200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 70
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6433.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 7417.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "45-54",
+        "horas_trabajadas": 45
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 5200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 40
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 7350.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 70
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7300.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 59
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7300.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 56
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Secundaria completa",
+        "ingreso": 7260.0,
+        "informal": 1,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "18-24",
+        "horas_trabajadas": 8
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Mujer",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 6000.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "25-34",
+        "horas_trabajadas": 32
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Superior universitaria completa",
+        "ingreso": 7200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "35-44",
+        "horas_trabajadas": 85
+    },
+    {
+        "periodo": "2025-Q2",
+        "sexo": "Hombre",
+        "nivel_educativo": "Maestria/Doctorado",
+        "ingreso": 7200.0,
+        "informal": 0,
+        "ocupacion": "Ocupado",
+        "grupo_edad": "55-64",
+        "horas_trabajadas": 56
+    }
+]
