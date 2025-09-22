@@ -1,0 +1,409 @@
+periodo,Sexo,Edad,Grupo_Edad,Nivel_Educativo,Tipo_Ocupacion,Ingreso_Mensual,Horas_Trabajo_Semanal,es_informal
+2025-Q2,Hombre,72.0,65+,Secundaria completa,Empleador o patrono,70000.0,36.0,0
+2025-Q2,Mujer,60.0,55-64,Maestria/Doctorado,Empleado u obrero,43970.0,40.0,0
+2025-Q2,Hombre,62.0,55-64,Maestria/Doctorado,Empleado u obrero,26025.0,65.0,0
+2025-Q2,Hombre,57.0,55-64,Maestria/Doctorado,Empleado u obrero,28000.0,71.0,0
+2025-Q2,Hombre,58.0,55-64,Superior universitaria completa,Empleado u obrero,20450.0,55.0,0
+2025-Q2,Mujer,62.0,55-64,Superior universitaria completa,Empleado u obrero,20000.0,50.0,0
+2025-Q2,Mujer,57.0,55-64,Superior universitaria completa,Empleado u obrero,15217.0,40.0,0
+2025-Q2,Hombre,53.0,45-54,Superior universitaria completa,Empleado u obrero,12400.0,30.0,0
+2025-Q2,Hombre,49.0,45-54,Superior universitaria completa,Empleado u obrero,15000.0,40.0,0
+2025-Q2,Hombre,51.0,45-54,Superior universitaria completa,Empleado u obrero,15000.0,40.0,0
+2025-Q2,Hombre,41.0,35-44,Superior universitaria completa,Empleado u obrero,15000.0,45.0,0
+2025-Q2,Hombre,45.0,45-54,Maestria/Doctorado,Empleado u obrero,17000.0,45.0,0
+2025-Q2,Hombre,65.0,65+,Superior universitaria completa,Empleado u obrero,14729.0,70.0,0
+2025-Q2,Hombre,53.0,45-54,Superior universitaria completa,Empleado u obrero,18000.0,40.0,0
+2025-Q2,Hombre,36.0,35-44,Superior universitaria completa,Empleador o patrono,18000.0,50.0,0
+2025-Q2,Hombre,35.0,35-44,Superior universitaria completa,Empleado u obrero,14000.0,40.0,0
+2025-Q2,Hombre,37.0,35-44,Superior universitaria completa,Trabajador independiente,17500.0,60.0,0
+2025-Q2,Hombre,48.0,45-54,Maestria/Doctorado,Empleado u obrero,15000.0,55.0,0
+2025-Q2,Hombre,42.0,35-44,Superior universitaria completa,Empleado u obrero,13000.0,52.0,0
+2025-Q2,Mujer,52.0,45-54,Maestria/Doctorado,Empleado u obrero,13200.0,48.0,0
+2025-Q2,Hombre,44.0,35-44,Superior universitaria completa,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,57.0,55-64,Maestria/Doctorado,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,54.0,45-54,Secundaria completa,Empleador o patrono,16000.0,67.0,1
+2025-Q2,Hombre,56.0,55-64,Maestria/Doctorado,Empleado u obrero,12000.0,65.0,0
+2025-Q2,Mujer,51.0,45-54,Maestria/Doctorado,Empleado u obrero,15600.0,40.0,0
+2025-Q2,Hombre,29.0,25-34,Superior universitaria incompleta,Trabajador independiente,15600.0,53.0,0
+2025-Q2,Hombre,42.0,35-44,Secundaria completa,Trabajador independiente,15250.0,72.0,1
+2025-Q2,Hombre,62.0,55-64,Superior universitaria completa,Empleado u obrero,15000.0,46.0,0
+2025-Q2,Hombre,66.0,65+,Superior universitaria completa,Empleado u obrero,15000.0,40.0,0
+2025-Q2,Mujer,58.0,55-64,Maestria/Doctorado,Empleado u obrero,15000.0,40.0,1
+2025-Q2,Mujer,39.0,35-44,Superior universitaria completa,Empleador o patrono,15000.0,21.0,0
+2025-Q2,Hombre,44.0,35-44,Superior universitaria completa,Empleado u obrero,15000.0,40.0,0
+2025-Q2,Mujer,55.0,55-64,Superior universitaria completa,Empleado u obrero,12000.0,54.0,0
+2025-Q2,Mujer,49.0,45-54,Superior universitaria completa,Empleador o patrono,15000.0,40.0,0
+2025-Q2,Hombre,41.0,35-44,Superior universitaria completa,Empleado u obrero,13000.0,40.0,0
+2025-Q2,Hombre,50.0,45-54,Maestria/Doctorado,Empleado u obrero,13000.0,44.0,0
+2025-Q2,Hombre,60.0,55-64,Maestria/Doctorado,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Mujer,47.0,45-54,Superior universitaria completa,Empleado u obrero,14000.0,40.0,0
+2025-Q2,Mujer,51.0,45-54,Superior universitaria completa,Empleador o patrono,14000.0,40.0,1
+2025-Q2,Hombre,56.0,55-64,Superior universitaria completa,Empleado u obrero,11000.0,48.0,0
+2025-Q2,Hombre,44.0,35-44,Superior universitaria completa,Empleado u obrero,11000.0,45.0,0
+2025-Q2,Mujer,46.0,45-54,Maestria/Doctorado,Empleado u obrero,11000.0,40.0,0
+2025-Q2,Mujer,25.0,25-34,Superior universitaria completa,Empleado u obrero,10000.0,50.0,0
+2025-Q2,Mujer,28.0,25-34,Superior universitaria completa,Empleado u obrero,10000.0,40.0,0
+2025-Q2,Hombre,62.0,55-64,Maestria/Doctorado,Empleado u obrero,10990.0,40.0,0
+2025-Q2,Mujer,36.0,35-44,Superior universitaria completa,Empleado u obrero,13040.0,70.0,0
+2025-Q2,Mujer,46.0,45-54,Superior no universitaria completa,Trabajador independiente,13000.0,46.0,0
+2025-Q2,Mujer,60.0,55-64,Superior no universitaria incompleta,Empleador o patrono,13000.0,10.0,0
+2025-Q2,Hombre,47.0,45-54,Maestria/Doctorado,Empleado u obrero,12500.0,32.0,1
+2025-Q2,Hombre,67.0,65+,Superior universitaria completa,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,35.0,35-44,Maestria/Doctorado,Empleado u obrero,13000.0,64.0,0
+2025-Q2,Mujer,59.0,55-64,Maestria/Doctorado,Empleado u obrero,11000.0,90.0,0
+2025-Q2,Hombre,59.0,55-64,Maestria/Doctorado,Empleado u obrero,9000.0,40.0,0
+2025-Q2,Hombre,59.0,55-64,Superior universitaria completa,Empleado u obrero,10000.0,45.0,1
+2025-Q2,Mujer,68.0,65+,Secundaria completa,Empleado u obrero,10000.0,40.0,0
+2025-Q2,Mujer,46.0,45-54,Superior universitaria completa,Empleado u obrero,10000.0,32.0,0
+2025-Q2,Hombre,54.0,45-54,Maestria/Doctorado,Empleado u obrero,10000.0,30.0,0
+2025-Q2,Mujer,38.0,35-44,Superior universitaria completa,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,70.0,65+,Maestria/Doctorado,Empleado u obrero,12000.0,61.0,0
+2025-Q2,Hombre,49.0,45-54,Maestria/Doctorado,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,58.0,55-64,Superior universitaria completa,Empleado u obrero,12000.0,40.0,0
+2025-Q2,Hombre,51.0,45-54,Superior universitaria completa,Empleado u obrero,9500.0,40.0,0
+2025-Q2,Hombre,47.0,45-54,Maestria/Doctorado,Empleado u obrero,10000.0,38.0,0
+2025-Q2,Hombre,37.0,35-44,Superior universitaria completa,Empleado u obrero,11600.0,56.0,1
+2025-Q2,Hombre,50.0,45-54,Superior no universitaria completa,Trabajador independiente,11258.0,48.0,1
+2025-Q2,Hombre,52.0,45-54,Superior universitaria completa,Empleado u obrero,9000.0,45.0,0
+2025-Q2,Mujer,27.0,25-34,Superior universitaria completa,Empleado u obrero,9000.0,32.0,0
+2025-Q2,Hombre,42.0,35-44,Maestria/Doctorado,Empleado u obrero,8500.0,40.0,0
+2025-Q2,Hombre,39.0,35-44,Superior universitaria completa,Empleado u obrero,8600.0,48.0,0
+2025-Q2,Mujer,35.0,35-44,Maestria/Doctorado,Empleado u obrero,11000.0,54.0,0
+2025-Q2,Hombre,52.0,45-54,Maestria/Doctorado,Empleado u obrero,10000.0,41.0,0
+2025-Q2,Hombre,48.0,45-54,Maestria/Doctorado,Trabajador independiente,11000.0,28.0,0
+2025-Q2,Hombre,34.0,25-34,Superior universitaria completa,Empleado u obrero,9800.0,59.0,0
+2025-Q2,Mujer,40.0,35-44,Superior universitaria completa,Empleado u obrero,8500.0,40.0,0
+2025-Q2,Hombre,65.0,65+,Superior universitaria completa,Empleado u obrero,8500.0,45.0,0
+2025-Q2,Hombre,34.0,25-34,Superior universitaria completa,Empleado u obrero,8200.0,40.0,0
+2025-Q2,Hombre,36.0,35-44,Superior universitaria completa,Empleado u obrero,8475.0,44.0,0
+2025-Q2,Hombre,44.0,35-44,Superior universitaria completa,Empleado u obrero,10000.0,72.0,0
+2025-Q2,Hombre,36.0,35-44,Superior universitaria completa,Empleado u obrero,10000.0,75.0,0
+2025-Q2,Hombre,47.0,45-54,Superior universitaria completa,Empleado u obrero,8000.0,60.0,0
+2025-Q2,Hombre,57.0,55-64,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,40.0,35-44,Maestria/Doctorado,Empleado u obrero,8000.0,45.0,0
+2025-Q2,Mujer,45.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,60.0,0
+2025-Q2,Hombre,70.0,65+,Superior universitaria completa,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,62.0,55-64,Superior universitaria completa,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,53.0,45-54,Superior universitaria completa,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,30.0,25-34,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,61.0,55-64,Maestria/Doctorado,Empleado u obrero,10000.0,40.0,0
+2025-Q2,Hombre,24.0,18-24,Superior universitaria completa,Empleado u obrero,7500.0,40.0,0
+2025-Q2,Hombre,68.0,65+,Superior universitaria completa,Empleador o patrono,10000.0,45.0,0
+2025-Q2,Hombre,70.0,65+,Superior universitaria completa,Empleador o patrono,10000.0,51.0,0
+2025-Q2,Hombre,42.0,35-44,Superior universitaria completa,Empleador o patrono,10000.0,49.0,0
+2025-Q2,Hombre,31.0,25-34,Superior universitaria completa,Empleado u obrero,10000.0,47.0,1
+2025-Q2,Hombre,59.0,55-64,Superior universitaria completa,Empleador o patrono,10000.0,48.0,1
+2025-Q2,Hombre,66.0,65+,Superior universitaria completa,Empleado u obrero,10000.0,45.0,0
+2025-Q2,Hombre,55.0,55-64,Superior no universitaria completa,Empleador o patrono,10000.0,60.0,1
+2025-Q2,Mujer,43.0,35-44,Maestria/Doctorado,Empleado u obrero,9000.0,45.0,0
+2025-Q2,Hombre,42.0,35-44,Superior universitaria completa,Empleado u obrero,8500.0,48.0,0
+2025-Q2,Hombre,64.0,55-64,Superior universitaria completa,Empleado u obrero,8500.0,48.0,0
+2025-Q2,Mujer,68.0,65+,Superior universitaria completa,Empleado u obrero,9800.0,54.0,0
+2025-Q2,Hombre,41.0,35-44,Superior universitaria completa,Empleado u obrero,8000.0,60.0,1
+2025-Q2,Hombre,58.0,55-64,Superior no universitaria completa,Empleado u obrero,7779.0,112.0,0
+2025-Q2,Hombre,54.0,45-54,Superior universitaria completa,Empleado u obrero,9000.0,68.0,0
+2025-Q2,Mujer,53.0,45-54,Superior universitaria completa,Empleado u obrero,8000.0,45.0,0
+2025-Q2,Mujer,48.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,39.0,35-44,Superior universitaria completa,Empleado u obrero,7000.0,48.0,0
+2025-Q2,Hombre,54.0,45-54,Superior no universitaria incompleta,Empleado u obrero,7083.0,48.0,0
+2025-Q2,Hombre,46.0,45-54,Maestria/Doctorado,Empleado u obrero,9000.0,40.0,0
+2025-Q2,Hombre,36.0,35-44,Superior universitaria completa,Empleado u obrero,9000.0,48.0,0
+2025-Q2,Mujer,27.0,25-34,Superior universitaria completa,Empleado u obrero,9000.0,66.0,0
+2025-Q2,Hombre,52.0,45-54,Maestria/Doctorado,Empleado u obrero,9000.0,40.0,0
+2025-Q2,Hombre,62.0,55-64,Maestria/Doctorado,Empleado u obrero,9000.0,52.0,0
+2025-Q2,Hombre,54.0,45-54,Maestria/Doctorado,Empleado u obrero,9000.0,40.0,1
+2025-Q2,Mujer,52.0,45-54,Superior universitaria incompleta,Empleador o patrono,9000.0,63.0,1
+2025-Q2,Hombre,52.0,45-54,Superior universitaria completa,Empleador o patrono,9000.0,56.0,0
+2025-Q2,Hombre,66.0,65+,Superior no universitaria completa,Empleado u obrero,6800.0,48.0,0
+2025-Q2,Hombre,51.0,45-54,Superior universitaria completa,Empleado u obrero,6300.0,40.0,0
+2025-Q2,Mujer,40.0,35-44,Maestria/Doctorado,Empleado u obrero,6500.0,30.0,0
+2025-Q2,Hombre,40.0,35-44,Superior universitaria completa,Empleado u obrero,6600.0,45.0,0
+2025-Q2,Hombre,35.0,35-44,Superior universitaria completa,Empleado u obrero,7500.0,51.0,0
+2025-Q2,Hombre,45.0,45-54,Maestria/Doctorado,Empleado u obrero,7000.0,90.0,0
+2025-Q2,Mujer,29.0,25-34,Maestria/Doctorado,Empleado u obrero,7000.0,40.0,0
+2025-Q2,Hombre,52.0,45-54,Superior universitaria incompleta,Empleado u obrero,7000.0,48.0,0
+2025-Q2,Hombre,54.0,45-54,Maestria/Doctorado,Empleado u obrero,7000.0,55.0,0
+2025-Q2,Hombre,33.0,25-34,Secundaria completa,Empleado u obrero,7000.0,40.0,0
+2025-Q2,Hombre,48.0,45-54,Superior universitaria completa,Empleado u obrero,7000.0,40.0,0
+2025-Q2,Mujer,46.0,45-54,Superior universitaria completa,Empleado u obrero,6330.0,45.0,0
+2025-Q2,Hombre,60.0,55-64,Maestria/Doctorado,Empleado u obrero,6500.0,45.0,0
+2025-Q2,Mujer,48.0,45-54,Superior no universitaria incompleta,Trabajador independiente,8637.0,66.0,1
+2025-Q2,Mujer,35.0,35-44,Secundaria completa,Empleado u obrero,8610.0,70.0,1
+2025-Q2,Mujer,42.0,35-44,Superior universitaria completa,Empleado u obrero,7033.0,40.0,0
+2025-Q2,Hombre,34.0,25-34,Superior universitaria completa,Empleado u obrero,8500.0,48.0,0
+2025-Q2,Hombre,46.0,45-54,Superior universitaria completa,Empleado u obrero,8500.0,40.0,0
+2025-Q2,Hombre,38.0,35-44,Maestria/Doctorado,Empleado u obrero,8270.0,35.0,1
+2025-Q2,Hombre,39.0,35-44,Superior universitaria completa,Empleado u obrero,7000.0,48.0,0
+2025-Q2,Hombre,44.0,35-44,Superior no universitaria completa,Trabajador independiente,8200.0,84.0,1
+2025-Q2,Hombre,39.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,48.0,0
+2025-Q2,Hombre,32.0,25-34,Maestria/Doctorado,Empleado u obrero,6500.0,40.0,0
+2025-Q2,Hombre,37.0,35-44,Superior universitaria completa,Empleado u obrero,6500.0,54.0,0
+2025-Q2,Hombre,50.0,45-54,Secundaria completa,Empleador o patrono,8085.0,56.0,1
+2025-Q2,Hombre,42.0,35-44,Superior universitaria completa,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,33.0,25-34,Superior universitaria completa,Empleado u obrero,7000.0,48.0,0
+2025-Q2,Hombre,52.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,71.0,65+,Maestria/Doctorado,Empleado u obrero,8000.0,36.0,0
+2025-Q2,Hombre,52.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,48.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,49.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,36.0,0
+2025-Q2,Hombre,47.0,45-54,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Mujer,36.0,35-44,Maestria/Doctorado,Empleado u obrero,8000.0,40.0,0
+2025-Q2,Hombre,35.0,35-44,Superior universitaria completa,Empleador o patrono,8000.0,71.0,1
+2025-Q2,Hombre,41.0,35-44,Superior universitaria completa,Empleado u obrero,6500.0,45.0,0
+2025-Q2,Hombre,69.0,65+,Superior universitaria completa,Empleador o patrono,8000.0,45.0,0
+2025-Q2,Mujer,29.0,25-34,Superior universitaria completa,Empleado u obrero,8000.0,45.0,1
+2025-Q2,Hombre,59.0,55-64,Superior universitaria completa,Empleador o patrono,8000.0,94.0,0
+2025-Q2,Hombre,50.0,45-54,Superior no universitaria completa,Empleador o patrono,8000.0,40.0,1
+2025-Q2,Hombre,78.0,65+,Superior universitaria completa,Empleador o patrono,8000.0,50.0,0
+2025-Q2,Hombre,40.0,35-44,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Hombre,56.0,55-64,Maestria/Doctorado,Trabajador independiente,7700.0,24.0,1
+2025-Q2,Mujer,57.0,55-64,Maestria/Doctorado,Trabajador independiente,7700.0,40.0,1
+2025-Q2,Hombre,49.0,45-54,Superior universitaria completa,Empleado u obrero,7000.0,40.0,0
+2025-Q2,Hombre,62.0,55-64,Superior universitaria incompleta,Empleado u obrero,5865.0,40.0,0
+2025-Q2,Hombre,66.0,65+,Superior universitaria completa,Empleado u obrero,6570.0,40.0,0
+2025-Q2,Mujer,68.0,65+,Superior universitaria incompleta,Empleado u obrero,6500.0,38.0,0
+2025-Q2,Mujer,36.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,48.0,0
+2025-Q2,Hombre,37.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Hombre,67.0,65+,Superior universitaria completa,Empleado u obrero,5600.0,72.0,0
+2025-Q2,Mujer,39.0,35-44,Maestria/Doctorado,Empleado u obrero,6800.0,46.0,0
+2025-Q2,Hombre,47.0,45-54,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Hombre,32.0,25-34,Superior universitaria completa,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Mujer,43.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,48.0,0
+2025-Q2,Hombre,71.0,65+,Superior universitaria completa,Empleado u obrero,7500.0,20.0,0
+2025-Q2,Mujer,47.0,45-54,Superior universitaria completa,Empleado u obrero,6000.0,34.0,0
+2025-Q2,Hombre,52.0,45-54,Superior universitaria completa,Empleado u obrero,6000.0,45.0,0
+2025-Q2,Hombre,45.0,45-54,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Hombre,54.0,45-54,Superior universitaria completa,Empleado u obrero,6000.0,54.0,0
+2025-Q2,Mujer,61.0,55-64,Superior universitaria completa,Trabajador independiente,7500.0,40.0,0
+2025-Q2,Hombre,35.0,35-44,Maestria/Doctorado,Empleador o patrono,7500.0,48.0,1
+2025-Q2,Hombre,68.0,65+,Superior universitaria incompleta,Empleado u obrero,6000.0,36.0,0
+2025-Q2,Hombre,52.0,45-54,Maestria/Doctorado,Empleado u obrero,7500.0,43.0,0
+2025-Q2,Mujer,62.0,55-64,Superior universitaria completa,Empleado u obrero,6000.0,48.0,0
+2025-Q2,Hombre,56.0,55-64,Maestria/Doctorado,Empleado u obrero,6000.0,36.0,0
+2025-Q2,Hombre,66.0,65+,Superior universitaria incompleta,Empleado u obrero,6000.0,48.0,0
+2025-Q2,Hombre,38.0,35-44,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Mujer,36.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,52.0,0
+2025-Q2,Mujer,35.0,35-44,Superior universitaria completa,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Mujer,50.0,45-54,Superior universitaria completa,Empleado u obrero,6000.0,36.0,0
+2025-Q2,Hombre,65.0,65+,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Mujer,49.0,45-54,Superior universitaria completa,Empleado u obrero,6000.0,50.0,0
+2025-Q2,Hombre,68.0,65+,Maestria/Doctorado,Empleado u obrero,6000.0,40.0,0
+2025-Q2,Hombre,38.0,35-44,Maestria/Doctorado,Empleado u obrero,6200.0,70.0,0
+2025-Q2,Hombre,45.0,45-54,Superior universitaria completa,Empleado u obrero,6433.0,40.0,0
+2025-Q2,Hombre,50.0,45-54,Secundaria completa,Empleador o patrono,7417.0,45.0,1
+2025-Q2,Hombre,25.0,25-34,Superior universitaria completa,Empleado u obrero,5200.0,40.0,0
+2025-Q2,Mujer,39.0,35-44,Secundaria completa,Trabajador independiente,7350.0,70.0,1
+2025-Q2,Hombre,37.0,35-44,Superior universitaria completa,Empleador o patrono,7300.0,59.0,0
+2025-Q2,Hombre,36.0,35-44,Superior universitaria completa,Trabajador independiente,7300.0,56.0,1
+2025-Q2,Hombre,19.0,18-24,Secundaria completa,Empleado u obrero,7260.0,8.0,1
+2025-Q2,Mujer,33.0,25-34,Superior universitaria completa,Empleado u obrero,6000.0,32.0,0
+2025-Q2,Hombre,44.0,35-44,Superior universitaria completa,Empleado u obrero,7200.0,85.0,0
+2025-Q2,Hombre,59.0,55-64,Maestria/Doctorado,Empleado u obrero,7200.0,56.0,0
+2025-Q1,Hombre,63.0,55-64,Secundaria completa,,1500.0,72.0,0
+2025-Q1,Hombre,28.0,25-34,Superior no universitaria incompleta,,1500.0,40.0,0
+2025-Q1,Mujer,29.0,25-34,Superior no universitaria completa,,1400.0,35.0,0
+2025-Q1,Hombre,20.0,18-24,Secundaria completa,,1828.0,66.0,1
+2025-Q1,Hombre,17.0,14-17,Secundaria completa,,1560.0,66.0,1
+2025-Q1,Hombre,16.0,14-17,Secundaria incompleta,,1512.0,66.0,1
+2025-Q1,Hombre,62.0,55-64,Superior universitaria incompleta,,1500.0,40.0,0
+2025-Q1,Mujer,49.0,45-54,Superior no universitaria completa,,1800.0,40.0,1
+2025-Q1,Mujer,67.0,65+,Superior universitaria completa,,6000.0,40.0,0
+2025-Q1,Mujer,50.0,45-54,Secundaria completa,,1800.0,48.0,0
+2025-Q1,Hombre,25.0,25-34,Superior universitaria completa,,2600.0,46.0,0
+2025-Q1,Hombre,55.0,55-64,Maestria/Doctorado,,20000.0,48.0,0
+2025-Q1,Mujer,56.0,55-64,Maestria/Doctorado,,20000.0,40.0,0
+2025-Q1,Hombre,40.0,35-44,Secundaria incompleta,,1300.0,40.0,0
+2025-Q1,Hombre,38.0,35-44,Secundaria completa,,1732.0,59.0,1
+2025-Q1,Mujer,25.0,25-34,Secundaria completa,,1233.0,35.0,1
+2025-Q1,Hombre,31.0,25-34,Superior no universitaria completa,,1516.0,45.0,1
+2025-Q1,Hombre,41.0,35-44,Secundaria completa,,2477.0,48.0,0
+2025-Q1,Hombre,19.0,18-24,Secundaria incompleta,,1800.0,48.0,1
+2025-Q1,Mujer,25.0,25-34,Secundaria incompleta,,1299.0,48.0,1
+2025-Q1,Hombre,28.0,25-34,Secundaria incompleta,,1516.0,48.0,1
+2025-Q1,Mujer,25.0,25-34,Secundaria completa,,1039.0,48.0,1
+2025-Q1,Mujer,18.0,18-24,Secundaria incompleta,,1039.0,66.0,1
+2025-Q1,Hombre,42.0,35-44,Superior no universitaria incompleta,,1430.0,54.0,0
+2025-Q1,Hombre,42.0,35-44,Superior universitaria completa,,2000.0,40.0,0
+2025-Q1,Mujer,60.0,55-64,Superior universitaria incompleta,,3000.0,36.0,0
+2025-Q1,Hombre,34.0,25-34,Superior universitaria incompleta,,2300.0,40.0,0
+2025-Q1,Mujer,57.0,55-64,Maestria/Doctorado,,3500.0,30.0,0
+2025-Q1,Hombre,27.0,25-34,Superior universitaria completa,,5400.0,48.0,0
+2025-Q1,Hombre,55.0,55-64,Secundaria completa,,1500.0,48.0,0
+2025-Q1,Mujer,53.0,45-54,Superior no universitaria completa,,1800.0,48.0,0
+2025-Q1,Hombre,41.0,35-44,Superior no universitaria incompleta,,1572.0,51.0,0
+2025-Q1,Hombre,47.0,45-54,Secundaria completa,,1299.0,48.0,1
+2025-Q1,Hombre,44.0,35-44,Superior no universitaria completa,,3500.0,48.0,0
+2025-Q1,Mujer,36.0,35-44,Superior no universitaria incompleta,,1500.0,48.0,0
+2025-Q1,Hombre,35.0,35-44,Superior universitaria incompleta,,3000.0,40.0,1
+2025-Q1,Mujer,68.0,65+,Secundaria incompleta,,1050.0,30.0,0
+2025-Q1,Mujer,37.0,35-44,Secundaria incompleta,,1050.0,48.0,0
+2025-Q1,Hombre,30.0,25-34,Secundaria completa,,2500.0,45.0,0
+2025-Q1,Mujer,59.0,55-64,Secundaria incompleta,,1587.0,60.0,1
+2025-Q1,Hombre,34.0,25-34,Secundaria completa,,3031.0,45.0,0
+2025-Q1,Mujer,40.0,35-44,Superior no universitaria completa,,2800.0,42.0,0
+2025-Q1,Hombre,43.0,35-44,Superior no universitaria completa,,3000.0,42.0,0
+2025-Q1,Hombre,59.0,55-64,Primaria completa,,2000.0,49.0,0
+2025-Q1,Hombre,28.0,25-34,Secundaria completa,,2000.0,48.0,0
+2025-Q1,Hombre,55.0,55-64,Superior universitaria completa,,6600.0,54.0,1
+2025-Q1,Hombre,55.0,55-64,Secundaria completa,,3800.0,88.0,1
+2025-Q1,Hombre,24.0,18-24,Superior universitaria completa,,2000.0,48.0,0
+2025-Q1,Hombre,22.0,18-24,Superior universitaria completa,,1800.0,44.0,0
+2025-Q1,Hombre,56.0,55-64,Superior universitaria incompleta,,1680.0,48.0,1
+2025-Q1,Mujer,42.0,35-44,Superior no universitaria completa,,1500.0,48.0,0
+2025-Q1,Mujer,42.0,35-44,Superior no universitaria completa,,1320.0,72.0,1
+2025-Q1,Mujer,33.0,25-34,Superior universitaria incompleta,,4500.0,61.0,0
+2025-Q1,Hombre,33.0,25-34,Superior universitaria completa,,5000.0,40.0,0
+2025-Q1,Hombre,56.0,55-64,Secundaria completa,,1500.0,48.0,0
+2025-Q1,Mujer,22.0,18-24,Superior universitaria incompleta,,1025.0,48.0,0
+2025-Q1,Hombre,20.0,18-24,Superior universitaria incompleta,,,40.0,1
+2025-Q1,Hombre,35.0,35-44,Superior no universitaria incompleta,,1780.0,45.0,0
+2025-Q1,Hombre,35.0,35-44,Primaria completa,,1732.0,50.0,1
+2025-Q1,Mujer,32.0,25-34,Secundaria incompleta,,700.0,66.0,1
+2025-Q1,Mujer,39.0,35-44,Secundaria completa,,624.0,60.0,1
+2025-Q1,Hombre,19.0,18-24,Secundaria completa,,1083.0,54.0,1
+2025-Q1,Hombre,30.0,25-34,Superior no universitaria completa,,3300.0,80.0,1
+2025-Q1,Hombre,39.0,35-44,Superior no universitaria incompleta,,2165.0,48.0,1
+2025-Q1,Hombre,24.0,18-24,Secundaria completa,,1637.0,54.0,1
+2025-Q1,Hombre,57.0,55-64,Secundaria completa,,389.0,48.0,1
+2025-Q1,Hombre,51.0,45-54,Secundaria completa,,1400.0,51.0,0
+2025-Q1,Mujer,51.0,45-54,Secundaria completa,,1525.0,50.0,0
+2025-Q1,Mujer,25.0,25-34,Superior no universitaria incompleta,,1950.0,48.0,0
+2025-Q1,Mujer,50.0,45-54,Secundaria completa,,1200.0,48.0,0
+2025-Q1,Hombre,30.0,25-34,Superior no universitaria completa,,3000.0,48.0,0
+2025-Q1,Mujer,28.0,25-34,Superior no universitaria completa,,2500.0,48.0,0
+2025-Q1,Hombre,45.0,45-54,Superior no universitaria completa,,2160.0,48.0,0
+2025-Q1,Mujer,44.0,35-44,Superior no universitaria completa,,2360.0,48.0,1
+2025-Q1,Mujer,64.0,55-64,Superior universitaria incompleta,,1200.0,48.0,0
+2025-Q1,Mujer,42.0,35-44,Secundaria completa,,1200.0,48.0,0
+2025-Q1,Mujer,20.0,18-24,Secundaria completa,,1299.0,48.0,1
+2025-Q1,Mujer,18.0,18-24,Secundaria completa,,1025.0,66.0,1
+2025-Q1,Mujer,36.0,35-44,Superior universitaria completa,,4000.0,45.0,0
+2025-Q1,Hombre,61.0,55-64,Primaria completa,,2500.0,48.0,0
+2025-Q1,Hombre,26.0,25-34,Superior universitaria incompleta,,1200.0,48.0,1
+2025-Q1,Hombre,32.0,25-34,Superior universitaria completa,,4500.0,40.0,0
+2025-Q1,Hombre,20.0,18-24,Secundaria completa,,2060.0,48.0,0
+2025-Q1,Hombre,41.0,35-44,Superior no universitaria incompleta,,2598.0,68.0,1
+2025-Q1,Mujer,44.0,35-44,Superior universitaria completa,,2500.0,40.0,0
+2025-Q1,Hombre,27.0,25-34,Superior no universitaria incompleta,,1633.0,52.0,1
+2025-Q1,Hombre,29.0,25-34,Superior universitaria completa,,4500.0,42.0,1
+2025-Q1,Hombre,67.0,65+,Superior universitaria completa,,6000.0,45.0,0
+2025-Q1,Mujer,46.0,45-54,Superior universitaria completa,,5000.0,45.0,0
+2025-Q1,Mujer,32.0,25-34,Superior no universitaria completa,,1930.0,36.0,0
+2025-Q1,Hombre,28.0,25-34,Superior universitaria incompleta,,2800.0,48.0,0
+2025-Q1,Mujer,57.0,55-64,Primaria completa,,2260.0,40.0,0
+2025-Q1,Mujer,36.0,35-44,Superior no universitaria completa,,1500.0,36.0,0
+2025-Q1,Hombre,34.0,25-34,Secundaria incompleta,,1299.0,50.0,1
+2025-Q1,Mujer,31.0,25-34,Secundaria incompleta,,1200.0,60.0,1
+2025-Q1,Mujer,23.0,18-24,Superior no universitaria incompleta,,1200.0,60.0,0
+2025-Q1,Mujer,25.0,25-34,Secundaria completa,,1800.0,55.0,1
+2024-Q3,Mujer,40.0,35-44,Secundaria completa,,1740.0,105.0,1
+2024-Q3,Mujer,67.0,65+,Secundaria completa,,1083.0,25.0,0
+2024-Q3,Mujer,30.0,25-34,Superior universitaria completa,,4000.0,40.0,1
+2024-Q3,Mujer,19.0,18-24,Secundaria completa,,1025.0,48.0,0
+2024-Q3,Hombre,24.0,18-24,Superior universitaria incompleta,,1299.0,18.0,1
+2024-Q3,Hombre,67.0,65+,Secundaria completa,,303.0,8.0,0
+2024-Q3,Hombre,43.0,35-44,Secundaria completa,,1000.0,48.0,0
+2024-Q3,Hombre,47.0,45-54,Secundaria completa,,3874.0,63.0,0
+2024-Q3,Hombre,47.0,45-54,Secundaria completa,,2000.0,40.0,0
+2024-Q3,Mujer,41.0,35-44,Secundaria incompleta,,1200.0,40.0,0
+2024-Q3,Hombre,19.0,18-24,Secundaria completa,,1020.0,61.0,1
+2024-Q3,Hombre,56.0,55-64,Secundaria completa,,,56.0,0
+2024-Q3,Mujer,59.0,55-64,Secundaria completa,,3020.0,48.0,1
+2024-Q3,Hombre,46.0,45-54,Superior no universitaria completa,,1000.0,59.0,0
+2024-Q3,Mujer,42.0,35-44,Secundaria completa,,233.0,42.0,0
+2024-Q3,Mujer,40.0,35-44,Secundaria completa,,700.0,63.0,1
+2024-Q3,Mujer,15.0,14-17,Secundaria incompleta,,,21.0,1
+2024-Q3,Hombre,20.0,18-24,Secundaria completa,,500.0,88.0,1
+2024-Q3,Mujer,17.0,14-17,Superior no universitaria incompleta,,,56.0,0
+2024-Q3,Hombre,44.0,35-44,Secundaria completa,,1120.0,60.0,1
+2024-Q3,Mujer,43.0,35-44,Superior no universitaria completa,,1200.0,33.0,1
+2024-Q3,Hombre,39.0,35-44,Superior universitaria incompleta,,1200.0,54.0,1
+2024-Q3,Mujer,41.0,35-44,Superior universitaria completa,,7000.0,30.0,0
+2024-Q3,Mujer,63.0,55-64,Sin nivel,,1100.0,35.0,1
+2024-Q3,Mujer,47.0,45-54,Superior universitaria incompleta,,1732.0,46.0,0
+2024-Q3,Hombre,42.0,35-44,Secundaria completa,,3382.0,58.0,1
+2024-Q3,Hombre,44.0,35-44,Secundaria completa,,1566.0,48.0,1
+2024-Q3,Mujer,41.0,35-44,Superior universitaria incompleta,,87.0,4.0,1
+2024-Q3,Hombre,50.0,45-54,Secundaria completa,,1820.0,45.0,1
+2024-Q3,Mujer,56.0,55-64,Primaria incompleta,,476.0,12.0,1
+2024-Q3,Hombre,27.0,25-34,Secundaria completa,,1833.0,77.0,0
+2024-Q3,Hombre,30.0,25-34,Superior universitaria incompleta,,1533.0,41.0,0
+2024-Q3,Hombre,55.0,55-64,Secundaria completa,,1619.0,42.0,1
+2024-Q3,Mujer,51.0,45-54,Superior no universitaria completa,,3293.0,58.0,1
+2024-Q3,Hombre,29.0,25-34,Superior no universitaria completa,,1600.0,48.0,0
+2024-Q3,Hombre,23.0,18-24,Superior no universitaria incompleta,,845.0,24.0,1
+2024-Q3,Hombre,55.0,55-64,Superior no universitaria incompleta,,1900.0,70.0,1
+2024-Q3,Mujer,47.0,45-54,Superior no universitaria incompleta,,650.0,12.0,1
+2024-Q3,Hombre,37.0,35-44,Maestria/Doctorado,,7000.0,35.0,0
+2024-Q3,Mujer,35.0,35-44,Superior universitaria completa,,3100.0,40.0,0
+2024-Q3,Hombre,56.0,55-64,Superior universitaria completa,,3101.0,40.0,1
+2024-Q3,Hombre,40.0,35-44,Maestria/Doctorado,,4900.0,50.0,1
+2024-Q3,Hombre,59.0,55-64,Maestria/Doctorado,,10000.0,40.0,0
+2024-Q3,Mujer,59.0,55-64,Maestria/Doctorado,,10000.0,40.0,0
+2024-Q3,Hombre,55.0,55-64,Secundaria incompleta,,965.0,42.0,1
+2024-Q3,Mujer,35.0,35-44,Secundaria completa,,3180.0,32.0,0
+2024-Q3,Mujer,55.0,55-64,Secundaria completa,,1100.0,56.0,1
+2024-Q3,Hombre,33.0,25-34,Secundaria completa,,,56.0,1
+2024-Q3,Mujer,30.0,25-34,Superior no universitaria incompleta,,1025.0,40.0,1
+2024-Q3,Hombre,56.0,55-64,Superior universitaria completa,,2500.0,40.0,0
+2024-Q3,Hombre,31.0,25-34,Secundaria completa,,1126.0,48.0,1
+2024-Q3,Hombre,43.0,35-44,Primaria completa,,1299.0,56.0,1
+2024-Q3,Hombre,19.0,18-24,Secundaria completa,,1299.0,50.0,1
+2024-Q3,Hombre,67.0,65+,Secundaria incompleta,,1150.0,48.0,1
+2024-Q3,Mujer,49.0,45-54,Secundaria completa,,1200.0,72.0,1
+2024-Q3,Hombre,36.0,35-44,Secundaria completa,,3000.0,48.0,0
+2024-Q3,Hombre,43.0,35-44,Secundaria completa,,1680.0,58.0,1
+2024-Q3,Mujer,19.0,18-24,Secundaria completa,,1200.0,72.0,1
+2024-Q3,Hombre,44.0,35-44,Secundaria completa,,2200.0,66.0,1
+2024-Q3,Mujer,39.0,35-44,Primaria completa,,,66.0,1
+2024-Q3,Mujer,32.0,25-34,Superior universitaria completa,,3000.0,48.0,0
+2024-Q3,Hombre,46.0,45-54,Superior universitaria completa,,3000.0,40.0,0
+2024-Q3,Mujer,38.0,35-44,Superior universitaria completa,,1800.0,40.0,0
+2024-Q3,Hombre,27.0,25-34,Superior universitaria completa,,4000.0,48.0,0
+2024-Q3,Hombre,23.0,18-24,Secundaria completa,,1299.0,50.0,0
+2024-Q3,Hombre,23.0,18-24,Superior no universitaria incompleta,,1732.0,48.0,0
+2024-Q3,Hombre,31.0,25-34,Superior universitaria completa,,1025.0,46.0,0
+2024-Q3,Mujer,33.0,25-34,Superior no universitaria completa,,2030.0,48.0,0
+2024-Q3,Mujer,50.0,45-54,Secundaria incompleta,,1060.0,46.0,0
+2024-Q3,Hombre,34.0,25-34,Secundaria completa,,346.0,60.0,1
+2024-Q3,Hombre,41.0,35-44,Primaria completa,,3118.0,45.0,1
+2024-Q3,Mujer,35.0,35-44,Primaria incompleta,,465.0,6.0,1
+2024-Q3,Mujer,32.0,25-34,Secundaria completa,,280.0,30.0,1
+2024-Q3,Mujer,56.0,55-64,Superior no universitaria completa,,1400.0,48.0,0
+2024-Q3,Mujer,34.0,25-34,Superior universitaria incompleta,,2200.0,72.0,0
+2024-Q3,Mujer,60.0,55-64,Maestria/Doctorado,,5000.0,40.0,0
+2024-Q3,Hombre,79.0,65+,Superior universitaria incompleta,,3500.0,48.0,0
+2024-Q3,Mujer,37.0,35-44,Superior universitaria completa,,8000.0,41.0,0
+2024-Q3,Hombre,44.0,35-44,Secundaria incompleta,,1500.0,74.0,1
+2024-Q3,Mujer,46.0,45-54,Secundaria completa,,1500.0,51.0,1
+2024-Q3,Hombre,39.0,35-44,Superior no universitaria completa,,1150.0,60.0,1
+2024-Q3,Hombre,23.0,18-24,Secundaria completa,,3550.0,72.0,1
+2024-Q3,Hombre,45.0,45-54,Secundaria completa,,1100.0,20.0,1
+2024-Q3,Mujer,44.0,35-44,Secundaria completa,,100.0,14.0,1
+2024-Q3,Hombre,70.0,65+,Secundaria completa,,346.0,12.0,0
+2024-Q3,Hombre,22.0,18-24,Superior universitaria incompleta,,2160.0,56.0,1
+2024-Q3,Mujer,37.0,35-44,Superior universitaria incompleta,,411.0,18.0,0
+2024-Q3,Hombre,57.0,55-64,Secundaria completa,,450.0,16.0,0
+2024-Q3,Hombre,32.0,25-34,Secundaria completa,,1516.0,40.0,1
+2024-Q3,Mujer,35.0,35-44,Superior universitaria completa,,2500.0,45.0,0
+2024-Q3,Hombre,39.0,35-44,Secundaria completa,,3700.0,40.0,0
+2024-Q3,Mujer,34.0,25-34,Secundaria completa,,1025.0,48.0,0
+2024-Q3,Mujer,64.0,55-64,Superior universitaria completa,,350.0,30.0,0
+2024-Q3,Hombre,29.0,25-34,Superior universitaria completa,,3500.0,44.0,0
+2024-Q3,Mujer,55.0,55-64,Secundaria completa,,80.0,2.0,1
+2024-Q3,Hombre,76.0,65+,Secundaria incompleta,,2120.0,68.0,1
+2024-Q3,Hombre,69.0,65+,Superior universitaria completa,,6700.0,40.0,0
+2024-Q3,Hombre,20.0,18-24,Secundaria completa,,1800.0,56.0,0
+2024-Q3,Hombre,67.0,65+,Superior no universitaria completa,,689.0,41.0,0
+2024-Q3,Hombre,47.0,45-54,Superior no universitaria incompleta,,3248.0,48.0,0
+2024-Q3,Hombre,25.0,25-34,Superior universitaria completa,,3400.0,44.0,1
+2024-Q3,Hombre,23.0,18-24,Secundaria completa,,1516.0,48.0,1
+2024-Q3,Hombre,43.0,35-44,Secundaria completa,,1819.0,54.0,0
+2024-Q3,Hombre,41.0,35-44,Primaria incompleta,,650.0,30.0,1
+2024-Q3,Mujer,51.0,45-54,Superior universitaria completa,,2950.0,40.0,0
+2024-Q3,Hombre,72.0,65+,Superior universitaria completa,,1500.0,10.0,0
+2024-Q3,Mujer,35.0,35-44,Superior no universitaria completa,,1712.0,46.0,1
+2024-Q3,Hombre,65.0,65+,Secundaria completa,,,70.0,1
+2024-Q3,Mujer,60.0,55-64,Secundaria completa,,1762.0,70.0,1
+2024-Q3,Mujer,49.0,45-54,Secundaria completa,,1417.0,57.0,0
+2024-Q3,Mujer,55.0,55-64,Superior no universitaria completa,,238.0,14.0,0
