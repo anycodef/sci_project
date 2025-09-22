@@ -3,6 +3,13 @@ import pandas as pd
 import plotly.express as px
 import pickle
 import numpy as np
+import os
+
+# --- Path setup ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "processed_data.csv")
+MODEL_PATH = os.path.join(BASE_DIR, "informality_model.pickle")
+
 
 # --- Page Configuration ---
 st.set_page_config(
@@ -24,11 +31,11 @@ st.title("Dashboard de Análisis del Mercado Laboral")
 def load_data():
     """Loads the processed data from the CSV file."""
     try:
-        df = pd.read_csv("./data/processed_data.csv")
+        df = pd.read_csv(DATA_PATH)
         df['periodo'] = pd.Categorical(df['periodo'], categories=sorted(df['periodo'].unique()), ordered=True)
         return df
     except FileNotFoundError:
-        st.error("El archivo `data/processed_data.csv` no fue encontrado. Por favor, ejecute `data_prep.py` primero.")
+        st.error(f"El archivo `{DATA_PATH}` no fue encontrado. Por favor, ejecute `data_prep.py` primero.")
         return pd.DataFrame()
 
 df = load_data()
@@ -38,11 +45,11 @@ df = load_data()
 def load_model():
     """Loads the trained model from the pickle file."""
     try:
-        with open("informality_model.pickle", "rb") as f:
+        with open(MODEL_PATH, "rb") as f:
             model = pickle.load(f)
         return model
     except FileNotFoundError:
-        st.error("El archivo del modelo `informality_model.pickle` no fue encontrado.")
+        st.error(f"El archivo del modelo `{MODEL_PATH}` no fue encontrado.")
         return None
 
 model = load_model()
