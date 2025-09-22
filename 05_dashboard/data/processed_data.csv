@@ -1,4 +1,4 @@
-periodo,Sexo,Edad,Grupo_Edad,Nivel_Educativo,Tipo_Ocupacion,Ingreso_Mensual,Horas_Trabajo_Semanal,es_informal
+periodo,Sexo,Edad,grupo_edad,Nivel Educativo,Tipo de Ocupación,Ingreso_Mensual,whoraT,es_informal
 2025-Q2,Hombre,72.0,65+,Secundaria completa,Empleador o patrono,70000.0,36.0,0
 2025-Q2,Mujer,60.0,55-64,Maestria/Doctorado,Empleado u obrero,43970.0,40.0,0
 2025-Q2,Hombre,62.0,55-64,Maestria/Doctorado,Empleado u obrero,26025.0,65.0,0

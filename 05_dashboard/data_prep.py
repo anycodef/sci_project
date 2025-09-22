@@ -77,25 +77,22 @@ def process_working_population(df):
         if var in df_trabajo.columns:
             df_trabajo[var] = df_trabajo[var].map(mapping).astype('category')
 
-    # Rename columns for clarity
+    # Rename columns to match model expectations
     df_trabajo.rename(columns={
         'C207': 'Sexo',
         'C208': 'Edad',
-        'C366': 'Nivel_Educativo',
-        'C310': 'Tipo_Ocupacion',
-        'INGTOT': 'Ingreso_Mensual',
-        'whoraT': 'Horas_Trabajo_Semanal'
+        'C366': 'Nivel Educativo',
+        'C310': 'Tipo de Ocupación', # Note the space
+        'INGTOT': 'Ingreso_Mensual'
+        # 'whoraT' is intentionally not renamed
     }, inplace=True)
 
-    # Feature Engineering: Age Group
+    # Feature Engineering: Age Group (with lowercase name)
     bins = [14, 18, 25, 35, 45, 55, 65, np.inf]
     labels = ['14-17', '18-24', '25-34', '35-44', '45-54', '55-64', '65+']
-    df_trabajo['Grupo_Edad'] = pd.cut(df_trabajo['Edad'], bins=bins, labels=labels, right=False)
+    df_trabajo['grupo_edad'] = pd.cut(df_trabajo['Edad'], bins=bins, labels=labels, right=False)
 
     # Feature Engineering: Informality
-    # C312: 1=Juridica, 2=Natural con RUC, 3=Sin RUC. Informal if C312 is 3.
-    # C361_1: 1=Tiene seguro, 2=No tiene. Informal if C361_1 is 2.
-    # We define informal as being occupied and not having social security.
     df_trabajo['es_informal'] = ((df_trabajo['OCUP300'] == 'Ocupado') & (df_trabajo['C361_1'] == 2)).astype(int)
 
     # Filter for only the 'Ocupado' population for the final dataset
@@ -109,28 +106,25 @@ def main():
     """Main ETL script execution."""
     print("--- Starting Data Preparation ---")
 
-    # Create output directory if it doesn't exist
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
 
-    # Run the pipeline
     master_df = load_and_unify_data(DATA_SOURCE_DIR)
     df_cleaned = clean_special_codes(master_df)
     df_final = process_working_population(df_cleaned)
 
-    # Select and reorder columns for the final dataset
+    # Select and reorder columns for the final dataset, matching model expectations
     final_columns = [
-        'periodo', 'Sexo', 'Edad', 'Grupo_Edad', 'Nivel_Educativo',
-        'Tipo_Ocupacion', 'Ingreso_Mensual', 'Horas_Trabajo_Semanal', 'es_informal'
+        'periodo', 'Sexo', 'Edad', 'grupo_edad', 'Nivel Educativo',
+        'Tipo de Ocupación', 'Ingreso_Mensual', 'whoraT', 'es_informal'
     ]
-    # Ensure all columns exist, add if not
+
     for col in final_columns:
         if col not in df_final.columns:
             df_final[col] = np.nan
 
     df_final = df_final[final_columns]
 
-    # Save the processed data
     df_final.to_csv(OUTPUT_FILE, index=False)
     print(f"--- Data preparation complete. Output saved to {OUTPUT_FILE} ---")
 
