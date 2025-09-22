@@ -24,7 +24,7 @@ st.title("Dashboard de Análisis del Mercado Laboral")
 def load_data():
     """Loads the processed data from the CSV file."""
     try:
-        df = pd.read_csv("data/processed_data.csv")
+        df = pd.read_csv("./data/processed_data.csv")
         df['periodo'] = pd.Categorical(df['periodo'], categories=sorted(df['periodo'].unique()), ordered=True)
         return df
     except FileNotFoundError:

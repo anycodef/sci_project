@@ -22,7 +22,6 @@ def get_recode_maps():
 
 def load_and_unify_data(source_dir):
     """Loads, labels, and unifies all CSVs from the source directory."""
-    print(f"Reading data from: {source_dir}")
     files = [f for f in os.listdir(source_dir) if f.endswith('.csv')]
     if not files:
         raise FileNotFoundError(f"No CSV files found in {source_dir}")
@@ -42,12 +41,10 @@ def load_and_unify_data(source_dir):
 
     master_df = pd.concat(df_list, ignore_index=True)
     master_df.replace(r'^\s*$', np.nan, regex=True, inplace=True)
-    print("Data loaded and unified successfully.")
     return master_df
 
 def clean_special_codes(df):
     """Replaces special codes (e.g., 99, 999999) with NaN."""
-    print("Cleaning special codes...")
     codes_to_nan = {
         'C208': [99], 'INGTOT': [999999], 'whoraT': [99], 'I339_1': [999999],
         'C312': [4] # "NO SABE" for C312 is treated as missing
@@ -62,43 +59,33 @@ def clean_special_codes(df):
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
-    print("Special codes cleaned.")
     return df
 
 def process_working_population(df):
     """Filters for the working population, recodes variables, and engineers features."""
-    print("Processing working population data...")
-    # Filter for population aged 14 and over
     df_trabajo = df[df['C208'] >= 14].copy()
 
-    # Recode categorical variables
     maps = get_recode_maps()
     for var, mapping in maps.items():
         if var in df_trabajo.columns:
             df_trabajo[var] = df_trabajo[var].map(mapping).astype('category')
 
-    # Rename columns to match model expectations
     df_trabajo.rename(columns={
         'C207': 'Sexo',
         'C208': 'Edad',
         'C366': 'Nivel Educativo',
-        'C310': 'Tipo de Ocupación', # Note the space
+        'C310': 'Tipo de Ocupación',
         'INGTOT': 'Ingreso_Mensual'
-        # 'whoraT' is intentionally not renamed
     }, inplace=True)
 
-    # Feature Engineering: Age Group (with lowercase name)
     bins = [14, 18, 25, 35, 45, 55, 65, np.inf]
     labels = ['14-17', '18-24', '25-34', '35-44', '45-54', '55-64', '65+']
     df_trabajo['grupo_edad'] = pd.cut(df_trabajo['Edad'], bins=bins, labels=labels, right=False)
 
-    # Feature Engineering: Informality
     df_trabajo['es_informal'] = ((df_trabajo['OCUP300'] == 'Ocupado') & (df_trabajo['C361_1'] == 2)).astype(int)
 
-    # Filter for only the 'Ocupado' population for the final dataset
     df_trabajo = df_trabajo[df_trabajo['OCUP300'] == 'Ocupado'].copy()
 
-    print("Working population processed.")
     return df_trabajo
 
 
@@ -113,7 +100,6 @@ def main():
     df_cleaned = clean_special_codes(master_df)
     df_final = process_working_population(df_cleaned)
 
-    # Select and reorder columns for the final dataset, matching model expectations
     final_columns = [
         'periodo', 'Sexo', 'Edad', 'grupo_edad', 'Nivel Educativo',
         'Tipo de Ocupación', 'Ingreso_Mensual', 'whoraT', 'es_informal'
