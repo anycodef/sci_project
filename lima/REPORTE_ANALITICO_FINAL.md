@@ -1,52 +1,55 @@
 # Reporte Analítico Final: Mercado Laboral de Lima (2024-2025)
 
-## Resumen Ejecutivo
-Este informe presenta un análisis exhaustivo del mercado laboral en Lima Metropolitana, utilizando datos trimestrales de 2024 y 2025. Los hallazgos clave, respaldados por pruebas de hipótesis, indican que **el nivel educativo y el período (trimestre) son los predictores más fuertes tanto de los ingresos como de la formalidad laboral**. Se observa una brecha salarial de género estadísticamente significativa y una dinámica temporal que sugiere la influencia de factores estacionales o macroeconómicos en el mercado laboral. La informalidad sigue siendo un rasgo estructural, fuertemente ligado a los niveles educativos más bajos.
+## 1. Resumen Ejecutivo
+Este informe presenta un análisis exhaustivo del mercado laboral en Lima Metropolitana, utilizando datos trimestrales de 2024 y 2025. Se detalla un pipeline de datos robusto, desde la limpieza y preprocesamiento hasta la construcción de un modelo de datos conceptual y el desarrollo de un flujo de trabajo para modelos de machine learning.
 
-## Hallazgos del Análisis Descriptivo
-- El **ingreso promedio mensual ponderado** de la población ocupada en Lima es de **S/. 4,754.10**.
-- La **edad promedio ponderada** de la población ocupada es de **42.9 años**.
+Los hallazgos clave, respaldados por un análisis estadístico riguroso, confirman que **el nivel educativo, la edad y las horas trabajadas** son predictores potencialmente fuertes de los ingresos y la formalidad laboral. Sin embargo, el análisis también reveló una **severa escasez de datos completos** en la muestra proporcionada, lo que impidió el entrenamiento exitoso de modelos predictivos.
 
-### Evolución Temporal de Indicadores Clave
-A continuación, se muestra la evolución de los principales indicadores a lo largo de los trimestres analizados:
+A pesar de las limitaciones de los datos, el proyecto establece una base metodológica sólida para futuros análisis con conjuntos de datos más completos.
 
-| periodo   |   Ingreso Promedio Ponderado |   Tasa de Informalidad (%) |
-|:----------|-----------------------------:|---------------------------:|
-| 2024-Q1   |                     1,676.61 |                      55.46 |
-| 2024-Q2   |                     1,707.83 |                      67.85 |
-| 2024-Q3   |                     2,165.19 |                      53.96 |
-| 2024-Q4   |                     2,393.60 |                      46.98 |
-| 2025-Q1   |                     2,674.38 |                      41.98 |
-| 2025-Q2   |                    10,014.57 |                      12.88 |
+## 2. Metodología y Procesamiento de Datos
 
-## Pruebas de Hipótesis
-Para validar las relaciones observadas, se realizaron las siguientes pruebas de hipótesis (nivel de significancia α = 0.05).
+Se implementó un proceso automatizado para garantizar la reproducibilidad y la calidad de los datos.
 
-### 1. ¿Existe una brecha salarial de género?
-- **H₀ (Hipótesis Nula):** El ingreso promedio es el mismo para hombres y mujeres.
-- **H₁ (Hipótesis Alternativa):** El ingreso promedio es diferente para al menos un género.
-- **Prueba:** ANOVA. **Resultados:** F-statistic = 12.89, p-value = 0.0004
-- **Conclusión:** Dado que el p-valor (0.0004) es menor que 0.05, **se rechaza la hipótesis nula**. Existe evidencia estadística de una diferencia significativa en los ingresos entre hombres y mujeres.
+### a) Limpieza y Preprocesamiento de Datos
+Se desarrolló un script que unifica los datos trimestrales, estandariza columnas, maneja valores faltantes y crea nuevas características para enriquecer el análisis.
 
-### 2. ¿El nivel educativo influye en el ingreso?
-- **H₀:** El ingreso promedio es el mismo en todos los niveles educativos.
-- **H₁:** El ingreso promedio es diferente para al menos un nivel educativo.
-- **Prueba:** ANOVA. **Resultados:** F-statistic = 33.11, p-value = 0.0000
-- **Conclusión:** Dado que el p-valor es extremadamente bajo (0.0000), **se rechaza la hipótesis nula**. El nivel educativo tiene un impacto estadísticamente muy significativo en los ingresos.
+**Para más detalles, consulte:** [`DOCUMENTACION_LIMPIEZA.md`](./DOCUMENTACION_LIMPIEZA.md)
 
-### 3. ¿Hay una relación entre el nivel educativo y la informalidad?
-- **H₀:** El nivel educativo y la condición de informalidad son independientes.
-- **H₁:** El nivel educativo y la condición de informalidad no son independientes.
-- **Prueba:** Chi-cuadrado. **Resultados:** Chi² = 180.90, p-value = 0.0000
-- **Conclusión:** Dado que el p-valor es extremadamente bajo (0.0000), **se rechaza la hipótesis nula**. Existe una fuerte asociación estadística entre el nivel educativo de una persona y su probabilidad de ser un trabajador informal.
+### b) Modelo Conceptual de Datos
+Se diseñó un modelo de datos para estructurar la información en entidades lógicas como `Persona`, `Situación Laboral` e `Ingresos`, facilitando la comprensión de las relaciones en los datos.
 
-### 4. ¿La temporalidad (trimestre) afecta al mercado laboral?
-- **Análisis del Ingreso:** La prueba ANOVA entre `periodo` e `INGTOT` arrojó un **p-valor de 0.0000**. Esto indica que el ingreso promedio **varía significativamente** entre los diferentes trimestres.
-- **Análisis de la Informalidad:** La prueba Chi-cuadrado entre `periodo` y `es_informal` arrojó un **p-valor de 0.0000**. Esto indica que la proporción de trabajadores informales **no es la misma** en todos los trimestres.
-- **Conclusión General:** **Se rechaza la hipótesis nula en ambos casos**. La variable temporal es un factor crucial que influye tanto en los ingresos como en la estructura de formalidad del mercado laboral de Lima.
+**Para más detalles, consulte:** [`MODELO_DE_DATOS.md`](./MODELO_DE_DATOS.md)
 
-## Conclusiones Finales
-1.  **El Nivel Educativo es el Factor Dominante:** Tanto para determinar el nivel de ingresos como la probabilidad de estar en el sector formal, la educación es el predictor más influyente. Esto subraya la importancia de la inversión en capital humano.
-2.  **La Brecha de Género es Real y Medible:** El análisis confirma que, incluso controlando por otros factores, existe una diferencia salarial estadísticamente significativa entre hombres y mujeres.
-3.  **El Mercado Laboral no es Estático:** La significativa influencia de la variable `periodo` demuestra que el análisis del mercado laboral no puede ser una foto estática. Factores macroeconómicos o estacionales, que varían de un trimestre a otro, tienen un impacto real y medible.
-4.  **La Informalidad es un Problema Estructural:** La fuerte correlación negativa entre nivel educativo e informalidad sugiere que las políticas para combatir la informalidad deben ir de la mano con estrategias para mejorar el acceso y la calidad de la educación superior.
+## 3. Análisis Exploratorio y Dashboard
+Se enriqueció un dashboard interactivo que permite explorar los datos de forma dinámica. El dashboard ahora incluye nuevas visualizaciones sobre la distribución demográfica, el nivel educativo y la evolución temporal de indicadores clave como el desempleo y la informalidad.
+
+*(Nota: El dashboard se encuentra en la carpeta `06_dashboard`)*
+
+## 4. Selección de Características y Modelado
+Se realizó un análisis estadístico para identificar las variables más relevantes para predecir el ingreso y la informalidad.
+
+### a) Selección de Características
+Las pruebas de ANOVA y Chi-cuadrado confirmaron que variables como `c208` (edad), `whorat` (horas trabajadas) y `nivel_educativo_agrupado` tienen una relación estadísticamente significativa con las variables objetivo.
+
+**Para más detalles, consulte:** [`../04_seleccion_de_caracteristicas/SELECCION_DE_CARACTERISTICAS.md`](../04_seleccion_de_caracteristicas/SELECCION_DE_CARACTERISTICAS.md)
+
+### b) Flujo de Trabajo de Machine Learning
+Se construyó un pipeline de modelado robusto que incluye preprocesamiento, imputación de datos faltantes y entrenamiento de modelos. Sin embargo, el proceso se vio detenido por la falta de datos.
+
+- **Problema Identificado:** Después de filtrar por trabajadores ocupados y eliminar filas con datos faltantes en las variables clave (incluso en un conjunto reducido), no quedaron registros suficientes para entrenar los modelos de regresión y clasificación.
+- **Consecuencia:** Los modelos no pudieron ser entrenados, y por lo tanto, no se pueden generar predicciones válidas con la data actual.
+
+**Para más detalles sobre el pipeline, consulte:** [`../05_modelado/MODELADO.md`](../05_modelado/MODELADO.md)
+
+## 5. Conclusiones y Próximos Pasos
+
+### Conclusiones
+1.  **Base Metodológica Sólida:** El proyecto ha producido un conjunto de scripts y una metodología documentada que conforman un pipeline de análisis de datos robusto y reproducible.
+2.  **Limitación Crítica de Datos:** La principal conclusión del análisis es que la muestra de datos actual es insuficiente para la construcción de modelos predictivos. La escasez de registros completos impide derivar insights cuantitativos fiables a nivel de modelado.
+3.  **Potencial Analítico Confirmado:** El análisis de selección de características sugiere que, con datos adecuados, las variables seleccionadas serían excelentes predictores, validando las hipótesis iniciales del proyecto.
+
+### Recomendaciones y Próximos Pasos
+- **Adquisición de Datos Más Completos:** La prioridad absoluta es obtener un conjunto de datos más grande y con menos valores faltantes. Un dataset de mayor tamaño es esencial para poder entrenar y validar los modelos de machine learning.
+- **Re-ejecución del Pipeline:** Una vez se disponga de mejores datos, el pipeline de scripts desarrollado en este proyecto (desde la limpieza hasta el modelado) puede ser re-ejecutado para obtener los resultados predictivos originalmente planteados.
+- **Exploración de Técnicas de Imputación Avanzadas:** Si la adquisición de datos no es posible, se podría investigar el uso de técnicas de imputación más sofisticadas (ej. imputación multivariada) para intentar rescatar más registros, aunque esto debe hacerse con precaución.

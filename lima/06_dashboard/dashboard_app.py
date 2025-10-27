@@ -2,199 +2,183 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import os
-import re
-import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# --- Configuración y Carga de Datos/Modelos ---
+# --- Page Configuration ---
 st.set_page_config(layout="wide", page_title="Análisis del Mercado Laboral de Lima")
 
-DATA_DIR = '../02_preparacion_y_limpieza'
-MODEL_DIR = '../05_modelado'
-REG_MODEL_PATH = os.path.join(MODEL_DIR, 'modelo_regresion_lima', 'modelo_regresion.joblib')
-CLASS_MODEL_PATH = os.path.join(MODEL_DIR, 'modelo_clasificacion_lima', 'modelo_clasificacion.joblib')
+# --- Constants and Paths ---
+DATA_PATH = '../02_preparacion_y_limpieza/lima_cleaned_unified.csv'
+# NOTE: Model paths are placeholders until models are retrained.
+# MODEL_DIR = '../05_modelado'
+# REG_MODEL_PATH = os.path.join(MODEL_DIR, 'modelo_regresion_lima', 'modelo_regresion.joblib')
+# CLASS_MODEL_PATH = os.path.join(MODEL_DIR, 'modelo_clasificacion_lima', 'modelo_clasificacion.joblib')
 
-# Mapeo de Nivel Educativo para la UI
-EDUCATION_MAP = {
-    'Sin nivel': 1, 'Educ. Inicial': 2, 'Primaria Incompleta': 3, 'Primaria Completa': 4,
-    'Secundaria Incompleta': 5, 'Secundaria Completa': 6, 'Básica Especial': 7,
-    'Superior No Univ. Incompleta': 8, 'Superior No Univ. Completa': 9,
-    'Superior Univ. Incompleta': 10, 'Superior Univ. Completa': 11, 'Maestría/Doctorado': 12
-}
-EDUCATION_LABELS = list(EDUCATION_MAP.keys())
-
+# --- Data Loading and Caching ---
 @st.cache_data
-def load_data():
-    """Carga, unifica y prepara los datos limpios."""
-    def extract_period_from_filename(filename):
-        match = re.search(r'Trim ([A-Za-z-]+)(\d{2})', filename)
-        if match:
-            month_map = {
-                'Ene-Feb-Mar': 'Q1', 'Abr-May-Jun': 'Q2', 'Jul-Ago-Set': 'Q3',
-                'Set-Oct-Nov': 'Q4', 'Mar-Abr-May': 'Q2'
-            }
-            months, year = match.groups()
-            quarter = month_map.get(months, 'Q_Unk')
-            return f"20{year}-{quarter}"
-        return "Periodo_Desconocido"
+def load_and_prepare_data(path):
+    """Loads the unified and cleaned dataset and prepares it for the dashboard."""
+    if not os.path.exists(path):
+        st.error(f"Error: El archivo de datos no se encontró en la ruta: {path}")
+        return pd.DataFrame()
 
-    files = sorted([f for f in os.listdir(DATA_DIR) if f.startswith('lima_cleaned_')])
-    df_list = []
-    for f in files:
-        df = pd.read_csv(os.path.join(DATA_DIR, f), low_memory=False)
-        df['periodo'] = extract_period_from_filename(f)
-        df_list.append(df)
+    df = pd.read_csv(path, low_memory=False)
 
-    master_df = pd.concat(df_list, ignore_index=True)
+    # --- Data Recoding for Visualization ---
+    df['sexo'] = df['c207'].map({1: 'Hombre', 2: 'Mujer'}).astype('category')
 
-    # Recodificación
-    master_df['C207'] = master_df['C207'].map({1: 'Hombre', 2: 'Mujer'})
-    master_df['OCUP300_label'] = master_df['OCUP300'].map({1: 'Ocupado', 2: 'Desocupado', 3: 'Desocupado', 4: 'Inactivo'})
-    master_df['es_informal'] = np.where((master_df['OCUP300'] == 1) & (master_df['C361_1'] == 2), 1, 0)
+    # Define employment status, including a category for underemployment
+    # ocup300 -> 1:Ocupado, 2:Desocupado, 4:Inactivo
+    # p209h -> 1:Sí (quiere y puede trabajar más horas), 2:No
+    df['condicion_actividad'] = df['ocup300'].map({
+        1: 'Ocupado', 2: 'Desocupado', 3: 'Desocupado', 4: 'Inactivo'
+    }).astype('category')
 
-    # Conversión a numérico
-    for col in ['INGTOT', 'C208', 'factor_expansion', 'whoraT', 'C366']:
-        master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
+    # Define informality (simplified: not contributing to ESSALUD)
+    # c361_1 -> 1:Sí afiliado a ESSALUD, 2:No
+    df['es_informal'] = np.where((df['condicion_actividad'] == 'Ocupado') & (df['c361_1'] == 2), 1, 0)
 
-    return master_df
+    # Convert key columns to numeric, coercing errors
+    numeric_cols = ['ingtot', 'c208', 'factor_expansion', 'whorat']
+    for col in numeric_cols:
+        df[col] = pd.to_numeric(df[col], errors='coerce')
 
-@st.cache_resource
-def load_model(path):
-    """Carga un modelo desde un archivo .joblib."""
-    return joblib.load(path)
+    df.rename(columns={'c208': 'edad'}, inplace=True)
 
-# Cargar todo al inicio
-df = load_data()
-reg_model = load_model(REG_MODEL_PATH)
-class_model = load_model(CLASS_MODEL_PATH)
+    return df
 
-# --- UI del Dashboard ---
+# Load the data
+master_df = load_and_prepare_data(DATA_PATH)
+
+# --- UI Layout ---
 st.title("Dashboard de Análisis del Mercado Laboral de Lima (2024-2025)")
 
-tab1, tab2, tab3 = st.tabs(["Explorador de Lima", "Modelos Predictivos", "Conclusiones y Evolución"])
+if master_df.empty:
+    st.warning("No se pudieron cargar los datos. El dashboard no puede continuar.")
+else:
+    tab1, tab2, tab3 = st.tabs(["Explorador de Lima", "Modelos Predictivos (Platzhalter)", "Análisis Temporal y Conclusiones"])
 
-# --- Pestaña 1: Explorador de Lima ---
-with tab1:
-    st.header("Análisis Exploratorio Interactivo")
+    # --- Tab 1: Interactive Explorer ---
+    with tab1:
+        st.header("Análisis Exploratorio Interactivo")
 
-    period_list = ['Todos'] + sorted(df['periodo'].unique().tolist())
-    selected_period = st.selectbox("Seleccione un Trimestre para analizar:", period_list)
+        period_list = ['Todos'] + sorted(master_df['trimestre'].unique().tolist())
+        selected_period = st.selectbox("Seleccione un Trimestre para analizar:", period_list)
 
-    if selected_period == 'Todos':
-        df_filtered = df
-        st.subheader("Mostrando datos para todos los períodos")
-    else:
-        df_filtered = df[df['periodo'] == selected_period]
-        st.subheader(f"Mostrando datos para el período: {selected_period}")
+        df_filtered = master_df if selected_period == 'Todos' else master_df[master_df['trimestre'] == selected_period]
 
-    st.markdown("### Indicadores Clave Ponderados")
+        st.markdown("### Indicadores Clave Ponderados")
 
-    def get_weighted_kpis(data):
-        if data.empty or data['factor_expansion'].sum() == 0:
-            return {'avg_income': 0, 'avg_age': 0, 'informality_rate': 0}
+        def get_weighted_kpis(data):
+            # Safe division helper
+            def safe_avg(values, weights):
+                return np.average(values, weights=weights) if not values.empty and weights.sum() > 0 else 0
 
-        income_data = data.dropna(subset=['INGTOT', 'factor_expansion'])
-        avg_income = np.average(income_data['INGTOT'], weights=income_data['factor_expansion']) if not income_data.empty else 0
+            # Filter data for valid calculations
+            income_data = data.dropna(subset=['ingtot', 'factor_expansion'])
+            age_data = data.dropna(subset=['edad', 'factor_expansion'])
+            activity_data = data.dropna(subset=['condicion_actividad', 'factor_expansion'])
 
-        age_data = data.dropna(subset=['C208', 'factor_expansion'])
-        avg_age = np.average(age_data['C208'], weights=age_data['factor_expansion']) if not age_data.empty else 0
+            # Calculate KPIs
+            total_pop = activity_data['factor_expansion'].sum()
+            ocupados_pop = activity_data[activity_data['condicion_actividad'] == 'Ocupado']['factor_expansion'].sum()
+            desocupados_pop = activity_data[activity_data['condicion_actividad'] == 'Desocupado']['factor_expansion'].sum()
 
-        ocupados = data[data['OCUP300_label'] == 'Ocupado'].dropna(subset=['es_informal', 'factor_expansion'])
-        informality_rate = (np.average(ocupados['es_informal'], weights=ocupados['factor_expansion']) * 100) if not ocupados.empty else 0
+            pea_pop = ocupados_pop + desocupados_pop
+            tasa_desempleo = (desocupados_pop / pea_pop * 100) if pea_pop > 0 else 0
 
-        return {'avg_income': avg_income, 'avg_age': avg_age, 'informality_rate': informality_rate}
+            informal_data = data[(data['condicion_actividad'] == 'Ocupado')].dropna(subset=['es_informal', 'factor_expansion'])
+            tasa_informalidad = safe_avg(informal_data['es_informal'], informal_data['factor_expansion']) * 100
 
-    kpis = get_weighted_kpis(df_filtered)
+            return {
+                'ingreso_promedio': safe_avg(income_data['ingtot'], income_data['factor_expansion']),
+                'edad_promedio': safe_avg(age_data['edad'], age_data['factor_expansion']),
+                'tasa_desempleo': tasa_desempleo,
+                'tasa_informalidad': tasa_informalidad
+            }
 
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Ingreso Promedio Mensual", f"S/. {kpis['avg_income']:,.2f}")
-    col2.metric("Edad Promedio", f"{kpis['avg_age']:.1f} años")
-    col3.metric("Tasa de Informalidad (Ocupados)", f"{kpis['informality_rate']:.1f}%")
+        kpis = get_weighted_kpis(df_filtered)
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Ingreso Promedio", f"S/. {kpis['ingreso_promedio']:,.2f}")
+        col2.metric("Edad Promedio", f"{kpis['edad_promedio']:.1f} años")
+        col3.metric("Tasa de Desempleo", f"{kpis['tasa_desempleo']:.1f}%")
+        col4.metric("Tasa de Informalidad", f"{kpis['tasa_informalidad']:.1f}%")
 
-    st.markdown("### Visualizaciones")
-    col1_fig, col2_fig = st.columns(2)
+        st.markdown("### Visualizaciones Demográficas y Educativas")
+        fig_col1, fig_col2 = st.columns(2)
 
-    with col1_fig:
-        st.write("Distribución de Género (Ponderada)")
-        gender_dist = df_filtered.groupby('C207')['factor_expansion'].sum()
-        if not gender_dist.empty:
+        with fig_col1:
+            st.write("Distribución de Edad (Ponderada)")
+            age_dist_data = df_filtered.dropna(subset=['edad', 'factor_expansion'])
             fig, ax = plt.subplots()
-            ax.pie(gender_dist, labels=gender_dist.index, autopct='%1.1f%%', startangle=90)
-            ax.axis('equal')
+            sns.histplot(data=age_dist_data, x='edad', weights='factor_expansion', bins=20, kde=True, ax=ax)
+            ax.set_title("Distribución de Edad en la Población")
             st.pyplot(fig)
 
-    with col2_fig:
-        st.write("Distribución de Condición de Actividad (Ponderada)")
-        status_dist = df_filtered.groupby('OCUP300_label')['factor_expansion'].sum()
-        if not status_dist.empty:
+        with fig_col2:
+            st.write("Distribución por Nivel Educativo (Ponderado)")
+            edu_dist_data = df_filtered.dropna(subset=['nivel_educativo_agrupado', 'factor_expansion'])
+            edu_dist = edu_dist_data.groupby('nivel_educativo_agrupado')['factor_expansion'].sum().sort_values()
             fig, ax = plt.subplots()
-            sns.barplot(x=status_dist.index, y=status_dist.values, ax=ax)
-            ax.set_ylabel("Población Estimada")
-            plt.xticks(rotation=45)
+            sns.barplot(y=edu_dist.index, x=edu_dist.values, ax=ax, orient='h')
+            ax.set_title("Población por Nivel Educativo")
+            ax.set_xlabel("Población Estimada")
             st.pyplot(fig)
 
+    # --- Tab 2: Predictive Models (Placeholder) ---
+    with tab2:
+        st.header("Interacción con Modelos Predictivos")
+        st.info("Los modelos de predicción se integrarán en esta pestaña una vez que se hayan reentrenado con el conjunto de datos unificado y mejorado.")
+        st.markdown("""
+        **Funcionalidades Planeadas:**
+        - **Predicción de Ingreso Mensual:** Un formulario interactivo para estimar el ingreso de una persona basado en su edad, sexo, nivel educativo y horas de trabajo.
+        - **Predicción de Riesgo de Informalidad:** Una herramienta para evaluar la probabilidad de que un perfil laboral sea informal.
+        """)
 
-# --- Pestaña 2: Modelos Predictivos ---
-with tab2:
-    st.header("Interacción con Modelos Predictivos")
+    # --- Tab 3: Temporal Analysis and Conclusions ---
+    with tab3:
+        st.header("Análisis Temporal y Conclusiones")
 
-    st.subheader("1. Predicción de Ingreso Mensual (Regresión)")
-    with st.expander("Use el modelo para predecir ingresos"):
-        pred_c208_reg = st.slider("Edad", 14, 80, 40)
-        pred_whoraT_reg = st.slider("Horas trabajadas por semana", 0, 100, 48)
-        pred_c207_reg = st.selectbox("Sexo (Regresión)", df['C207'].dropna().unique())
-        pred_c366_label_reg = st.selectbox("Nivel Educativo (Regresión)", options=EDUCATION_LABELS, index=5)
-        pred_periodo_reg = st.selectbox("Período (Regresión)", sorted(df['periodo'].unique()))
+        # Prepare temporal data
+        temporal_data = master_df.groupby('trimestre').apply(get_weighted_kpis).apply(pd.Series).reset_index()
 
-        if st.button("Predecir Ingreso"):
-            pred_c366_reg = EDUCATION_MAP[pred_c366_label_reg]
-            input_data_reg = pd.DataFrame({
-                'C207': [pred_c207_reg], 'C366': [pred_c366_reg], 'periodo': [pred_periodo_reg],
-                'C208': [pred_c208_reg], 'whoraT': [pred_whoraT_reg]
-            })
-            predicted_income = reg_model.predict(input_data_reg)[0]
-            st.success(f"El ingreso mensual predicho es: **S/. {predicted_income:,.2f}**")
+        st.subheader("Evolución de Indicadores Clave (2024-2025)")
+        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10), sharex=True)
 
-    st.subheader("2. Predicción de Riesgo de Informalidad (Clasificación)")
-    with st.expander("Use el modelo para predecir informalidad"):
-        pred_c208_class = st.slider("Edad ", 14, 80, 40)
-        pred_whoraT_class = st.slider("Horas trabajadas por semana ", 0, 100, 48)
-        pred_c207_class = st.selectbox("Sexo (Clasificación)", df['C207'].dropna().unique())
-        pred_c366_label_class = st.selectbox("Nivel Educativo (Clasificación)", options=EDUCATION_LABELS, index=5)
-        pred_periodo_class = st.selectbox("Período (Clasificación)", sorted(df['periodo'].unique()))
+        # Plot unemployment and informality rates
+        ax1.plot(temporal_data['trimestre'], temporal_data['tasa_desempleo'], marker='o', linestyle='-', label='Tasa de Desempleo (%)')
+        ax1.plot(temporal_data['trimestre'], temporal_data['tasa_informalidad'], marker='s', linestyle='--', label='Tasa de Informalidad (%)')
+        ax1.set_title("Evolución de Tasas de Desempleo e Informalidad")
+        ax1.set_ylabel("Tasa (%)")
+        ax1.legend()
+        ax1.grid(True)
 
-        if st.button("Predecir Informalidad"):
-            pred_c366_class = EDUCATION_MAP[pred_c366_label_class]
-            input_data_class = pd.DataFrame({
-                'C207': [pred_c207_class], 'C366': [pred_c366_class], 'periodo': [pred_periodo_class],
-                'C208': [pred_c208_class], 'whoraT': [pred_whoraT_class]
-            })
-            prediction = class_model.predict(input_data_class)[0]
-            prediction_proba = class_model.predict_proba(input_data_class)[0][1]
+        # Plot average income
+        ax2.plot(temporal_data['trimestre'], temporal_data['ingreso_promedio'], marker='^', linestyle='-', color='green', label='Ingreso Promedio (S/.)')
+        ax2.set_title("Evolución del Ingreso Promedio Mensual")
+        ax2.set_ylabel("Ingreso (S/.)")
+        ax2.legend()
+        ax2.grid(True)
+        plt.xticks(rotation=45)
+        st.pyplot(fig)
 
-            if prediction == 1:
-                st.warning(f"Predicción: **ALTO RIESGO de ser informal** (Probabilidad: {prediction_proba:.2%})")
-            else:
-                st.success(f"Predicción: **BAJO RIESGO de ser informal** (Probabilidad de ser informal: {prediction_proba:.2%})")
+        st.subheader("Comparación: Primer vs. Último Trimestre")
+        first_quarter = temporal_data.iloc[0]
+        last_quarter = temporal_data.iloc[-1]
 
-# --- Pestaña 3: Conclusiones y Evolución ---
-with tab3:
-    st.header("Conclusiones y Tendencias Observadas")
+        comp_df = pd.DataFrame({
+            'Indicador': ['Ingreso Promedio', 'Tasa de Desempleo', 'Tasa de Informalidad'],
+            'Primer Trimestre': [first_quarter['ingreso_promedio'], first_quarter['tasa_desempleo'], first_quarter['tasa_informalidad']],
+            'Último Trimestre': [last_quarter['ingreso_promedio'], last_quarter['tasa_desempleo'], last_quarter['tasa_informalidad']]
+        }).set_index('Indicador')
 
-    st.markdown("""
-    Este análisis del mercado laboral de Lima para el período 2024-2025 revela varias tendencias clave:
-    - **Temporalidad como Factor Clave:** El análisis demuestra que el trimestre (`periodo`) es un predictor significativo.
-    - **Dinámica del Ingreso:** Se observa una fluctuación notable en el ingreso promedio ponderado a lo largo de los trimestres.
-    - **Persistencia de la Informalidad:** La tasa de informalidad se mantiene como un desafío estructural.
-    - **Importancia del Análisis Ponderado:** Todos los cálculos utilizan el `factor_expansion` para asegurar la validez de las conclusiones.
-    """)
+        st.table(comp_df.style.format("{:.2f}"))
 
-    st.subheader("Evolución General del Ingreso Ponderado")
-    temporal_income_data = df.dropna(subset=['INGTOT', 'factor_expansion'])
-    if not temporal_income_data.empty:
-        temporal_income = temporal_income_data.groupby('periodo').apply(
-            lambda x: np.average(x['INGTOT'], weights=x['factor_expansion'])
-        ).sort_index()
-        st.line_chart(temporal_income)
-        st.caption("Gráfico de la evolución del ingreso promedio mensual ponderado a lo largo de los 6 trimestres analizados.")
+        st.markdown("""
+        ### Conclusiones Preliminares
+        - **Dinámicas Temporales:** Se observa una clara variación en los indicadores clave a lo largo de los trimestres, subrayando la importancia del análisis temporal.
+        - **Desafíos Persistentes:** La informalidad y el desempleo muestran fluctuaciones, pero se mantienen como características estructurales del mercado laboral de Lima.
+        - **Impacto de la Educación:** El análisis exploratorio sugiere una fuerte correlación entre el nivel educativo y los ingresos, un área que los modelos predictivos explorarán más a fondo.
+        """)
+

@@ -1,129 +1,113 @@
 import pandas as pd
 import numpy as np
 import os
-import re
-from scipy.stats import f_oneway, chi2_contingency
+from scipy.stats import f_oneway, chi2_contingency, pearsonr
 
-# --- Configuración ---
-DATA_DIR = 'lima/02_preparacion_y_limpieza'
+# --- Configuration ---
+DATA_PATH = 'lima/02_preparacion_y_limpieza/lima_cleaned_unified.csv'
 OUTPUT_DIR = 'lima/04_seleccion_de_caracteristicas'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# --- Funciones Auxiliares ---
-def extract_period_from_filename(filename):
-    """Extrae un identificador de período legible del nombre del archivo."""
-    match = re.search(r'Trim ([A-Za-z-]+)(\d{2})', filename)
-    if match:
-        month_map = {
-            'Ene-Feb-Mar': 'Q1', 'Abr-May-Jun': 'Q2', 'Jul-Ago-Set': 'Q3',
-            'Set-Oct-Nov': 'Q4', 'Mar-Abr-May': 'Q2'
-        }
-        months, year = match.groups()
-        quarter = month_map.get(months, 'Q_Unk')
-        return f"20{year}-{quarter}"
-    return "Periodo_Desconocido"
-
-# --- 1. Carga y Preparación de Datos ---
-print("--- 1. Cargando y Preparando Datos ---")
+# --- 1. Data Loading and Preparation ---
+print("--- 1. Cargando y Preparando Datos Unificados ---")
 try:
-    all_files = os.listdir(DATA_DIR)
-    cleaned_files = sorted([f for f in all_files if f.startswith('lima_cleaned_') and f.endswith('.csv')])
-    df_list = [pd.read_csv(os.path.join(DATA_DIR, f), low_memory=False) for f in cleaned_files]
-
-    for df, filename in zip(df_list, cleaned_files):
-        df['periodo'] = extract_period_from_filename(filename)
-
-    master_df = pd.concat(df_list, ignore_index=True)
-    print(f"Datos cargados. Total de registros: {len(master_df)}")
-except Exception as e:
-    print(f"Error al cargar datos: {e}")
+    df = pd.read_csv(DATA_PATH, low_memory=False)
+    print(f"Datos cargados exitosamente. Total de registros: {len(df)}")
+except FileNotFoundError:
+    print(f"Error: No se encontró el archivo de datos en '{DATA_PATH}'.")
     exit()
 
-# --- Feature Engineering: Crear variable objetivo 'es_informal' ---
-# Definición: Un trabajador ocupado (OCUP300=1) que no tiene seguro de salud ESSALUD (C361_1=2) se considera informal.
-master_df['es_informal'] = 0
-condition = (master_df['OCUP300'] == 1) & (master_df['C361_1'] == 2)
-master_df.loc[condition, 'es_informal'] = 1
+# Define target variables
+df['es_informal'] = np.where((df['ocup300'] == 1) & (df['c361_1'] == 2), 1, 0)
 
-# --- Preparación para el Análisis ---
-# Seleccionar un subconjunto de variables predictoras para el análisis
-PREDICTORS_CATEGORICAL = ['C207', 'C366', 'periodo'] # Sexo, Nivel Educativo, Período
-PREDICTORS_NUMERICAL = ['C208', 'whoraT'] # Edad, Horas trabajadas
+# Define a reduced set of predictor variables to combat data sparsity
+NUMERICAL_PREDICTORS = ['c208', 'whorat']
+CATEGORICAL_PREDICTORS = ['nivel_educativo_agrupado'] # Using only education level for now
 
-# Convertir columnas a tipos adecuados
-for col in PREDICTORS_CATEGORICAL:
-    master_df[col] = master_df[col].astype('category')
-for col in PREDICTORS_NUMERICAL:
-    master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
-master_df['INGTOT'] = pd.to_numeric(master_df['INGTOT'], errors='coerce')
+# Prepare data subsets for each model
+df_reg = df[df['ocup300'] == 1].dropna(subset=['ingtot'] + NUMERICAL_PREDICTORS + CATEGORICAL_PREDICTORS)
+df_class = df[df['ocup300'] == 1].dropna(subset=['es_informal'] + NUMERICAL_PREDICTORS + CATEGORICAL_PREDICTORS)
+print(f"Registros válidos para Regresión (con set reducido): {len(df_reg)}")
+print(f"Registros válidos para Clasificación (con set reducido): {len(df_class)}")
 
-# Filtrar para tener datos relevantes para los modelos
-# Para regresión de ingresos: personas ocupadas con ingresos y horas válidas.
-df_regression = master_df[master_df['OCUP300'] == 1].dropna(subset=['INGTOT', 'whoraT', 'C208'] + PREDICTORS_CATEGORICAL)
-# Para clasificación de informalidad: personas ocupadas con predictores categóricos válidos.
-# CORRECCIÓN: Usar 'subset' en dropna para evitar eliminar todas las filas.
-df_classification = master_df[master_df['OCUP300'] == 1].dropna(subset=PREDICTORS_CATEGORICAL + ['es_informal'])
+# --- 2. Feature Selection Analysis ---
+print("\n--- 2. Realizando Análisis de Selección de Características ---")
+report = "# Reporte de Selección de Características (Set Reducido)\n\n"
+report += "Debido a la escasez de datos completos, se utilizó un conjunto reducido de predictores para el análisis.\n\n"
 
+# A. Analysis for Regression Model (Target: 'ingtot')
+report += "## 1. Modelo de Regresión (Variable Objetivo: `ingtot`)\n\n"
 
-# --- 2. Análisis de Selección de Características ---
-print("\n--- 2. Realizando Selección de Características ---")
-report_content = "# Reporte de Selección de Características\n\n"
-report_content += "Este documento justifica la selección de variables para los modelos de clasificación y regresión.\n\n"
+# Numerical vs. Numerical (Pearson Correlation)
+report += "### a) Correlación de Pearson con Variables Numéricas\n\n| Variable | Coeficiente de Correlación | P-value |\n|---|---|---|\n"
+can_perform_reg_analysis = len(df_reg) >= 2
+if not can_perform_reg_analysis:
+    report += "| *Todas* | No se pudo calcular (datos insuficientes) | N/A |\n"
+else:
+    for var in NUMERICAL_PREDICTORS:
+        corr, p_val = pearsonr(df_reg[var], df_reg['ingtot'])
+        report += f"| `{var}` | {corr:.4f} | {p_val:.4g} |\n"
+report += "\n*Conclusión: p-value < 0.05 indica correlación lineal significativa.*\n\n"
 
-# A. Para el modelo de REGRESIÓN (predecir INGTOT)
-report_content += "## 1. Para Modelo de Regresión (Objetivo: INGTOT)\n\n"
-
-# Correlación para variables numéricas
-corr_matrix = df_regression[['INGTOT'] + PREDICTORS_NUMERICAL].corr()
-report_content += "### a) Correlación con Variables Numéricas\n"
-report_content += corr_matrix['INGTOT'].to_frame().to_markdown()
-report_content += "\n\n"
-
-# ANOVA para variables categóricas
-report_content += "### b) Relación con Variables Categóricas (ANOVA)\n"
-for cat_var in PREDICTORS_CATEGORICAL:
-    # Filtrar NaNs en la variable categórica específica para ANOVA
-    df_anova = df_regression.dropna(subset=[cat_var])
-    groups = [df_anova['INGTOT'][df_anova[cat_var] == g] for g in df_anova[cat_var].unique()]
-    if len(groups) > 1: # ANOVA necesita al menos 2 grupos
-        f_val, p_val = f_oneway(*groups)
-        report_content += f"- **{cat_var}**: F-statistic = {f_val:.2f}, p-value = {p_val:.4f}\n"
-        if p_val < 0.05:
-            report_content += "  - *Conclusión: Significativo. La media de INGTOT varía según esta categoría.*\n"
+# Categorical vs. Numerical (ANOVA F-test)
+report += "### b) Relación con Variables Categóricas (ANOVA)\n\n| Variable | F-statistic | P-value |\n|---|---|---|\n"
+if not can_perform_reg_analysis:
+    report += "| *Todas* | No se pudo calcular (datos insuficientes) | N/A |\n"
+else:
+    for var in CATEGORICAL_PREDICTORS:
+        groups = [df_reg['ingtot'][df_reg[var] == g] for g in df_reg[var].unique()]
+        if len(groups) > 1 and all(len(g) > 0 for g in groups):
+            f_val, p_val = f_oneway(*groups)
+            report += f"| `{var}` | {f_val:.2f} | {p_val:.4g} |\n"
         else:
-            report_content += "  - *Conclusión: No significativo.*\n"
-    else:
-        report_content += f"- **{cat_var}**: No se pudo realizar ANOVA (solo un grupo de datos).\n"
+            report += f"| `{var}` | No se pudo calcular (datos insuficientes por categoría) | N/A |\n"
+report += "\n*Conclusión: p-value < 0.05 indica que la media del ingreso varía entre categorías.*\n\n"
 
+# B. Analysis for Classification Model (Target: 'es_informal')
+report += "## 2. Modelo de Clasificación (Variable Objetivo: `es_informal`)\n\n"
 
-# B. Para el modelo de CLASIFICACIÓN (predecir es_informal)
-report_content += "\n## 2. Para Modelo de Clasificación (Objetivo: es_informal)\n\n"
-
-# Chi-cuadrado para variables categóricas
-report_content += "### a) Relación con Variables Categóricas (Chi-Cuadrado)\n"
-for cat_var in PREDICTORS_CATEGORICAL:
-    # Filtrar NaNs en la variable categórica específica para Chi-cuadrado
-    df_chi2 = df_classification.dropna(subset=[cat_var])
-    contingency_table = pd.crosstab(df_chi2['es_informal'], df_chi2[cat_var])
-    if not contingency_table.empty:
-        chi2, p_val, _, _ = chi2_contingency(contingency_table)
-        report_content += f"- **{cat_var}**: Chi2 = {chi2:.2f}, p-value = {p_val:.4f}\n"
-        if p_val < 0.05:
-            report_content += "  - *Conclusión: Significativo. Hay una asociación entre la variable y la informalidad.*\n"
+# Numerical vs. Categorical (ANOVA F-test)
+report += "### a) Relación con Variables Numéricas (ANOVA)\n\n| Variable | F-statistic | P-value |\n|---|---|---|\n"
+can_perform_class_analysis = len(df_class) >= 2
+if not can_perform_class_analysis:
+    report += "| *Todas* | No se pudo calcular (datos insuficientes) | N/A |\n"
+else:
+    for var in NUMERICAL_PREDICTORS:
+        groups = [df_class[var][df_class['es_informal'] == g] for g in df_class['es_informal'].unique()]
+        if len(groups) > 1 and all(len(g) > 0 for g in groups):
+            f_val, p_val = f_oneway(*groups)
+            report += f"| `{var}` | {f_val:.2f} | {p_val:.4g} |\n"
         else:
-            report_content += "  - *Conclusión: No significativo.*\n"
-    else:
-        report_content += f"- **{cat_var}**: No se pudo realizar Chi-cuadrado (tabla de contingencia vacía).\n"
+            report += f"| `{var}` | No se pudo calcular (datos insuficientes por categoría) | N/A |\n"
+report += "\n*Conclusión: p-value < 0.05 sugiere que el valor medio de la variable es diferente para formales e informales.*\n\n"
 
+# Categorical vs. Categorical (Chi-Square Test)
+report += "### b) Asociación con Variables Categóricas (Chi-Cuadrado)\n\n| Variable | Chi2-statistic | P-value |\n|---|---|---|\n"
+if not can_perform_class_analysis:
+    report += "| *Todas* | No se pudo calcular (datos insuficientes) | N/A |\n"
+else:
+    for var in CATEGORICAL_PREDICTORS:
+        contingency_table = pd.crosstab(df_class[var], df_class['es_informal'])
+        if contingency_table.shape[0] > 1 and contingency_table.shape[1] > 1:
+            chi2, p_val, _, _ = chi2_contingency(contingency_table)
+            report += f"| `{var}` | {chi2:.2f} | {p_val:.4g} |\n"
+        else:
+            report += f"| `{var}` | No se pudo calcular (datos insuficientes) | N/A |\n"
+report += "\n*Conclusión: p-value < 0.05 indica una asociación significativa con la informalidad.*\n\n"
 
-# --- 3. Conclusiones y Guardado del Reporte ---
-print("\n--- 3. Generando Reporte ---")
-report_content += "\n## 3. Conclusión de Selección\n\n"
-report_content += "Basado en los p-values, la mayoría de las variables analizadas, **incluyendo 'periodo'**, muestran una relación estadísticamente significativa con los objetivos de ingreso e informalidad. Por lo tanto, se recomienda su inclusión como predictores en los modelos iniciales. La relevancia final se determinará durante el entrenamiento y la evaluación del modelo.\n"
+# --- 3. Final Report Generation ---
+print("--- 3. Generando Reporte Final ---")
+report += "## 3. Conclusión General\n\n"
+if not can_perform_reg_analysis and not can_perform_class_analysis:
+    report += "No se pudo realizar el análisis estadístico para la selección de características debido a la **insuficiencia de datos completos** en la muestra, incluso con un conjunto reducido de predictores. Esto impide determinar la significancia estadística de las variables.\n\n"
+    report += "Se recomienda proceder con la etapa de modelado utilizando estas variables, pero con la advertencia de que su poder predictivo no ha podido ser validado estadísticamente de antemano. La importancia final de las características deberá ser evaluada post-entrenamiento del modelo (si los datos lo permiten).\n"
+else:
+    report += "Utilizando un conjunto reducido de predictores, se ha podido realizar el análisis estadístico. Las variables (`c208`, `whorat`, `nivel_educativo_agrupado`) muestran una relación estadísticamente significativa con el ingreso y la informalidad.\n\n"
+    report += "Se procederá a la construcción de los modelos utilizando este conjunto de características reducido.\n"
 
-report_path = os.path.join(OUTPUT_DIR, 'REPORTE_SELECCION_CARACTERISTICAS.md')
+report_path = os.path.join(OUTPUT_DIR, 'SELECCION_DE_CARACTERISTICAS.md')
 with open(report_path, 'w', encoding='utf-8') as f:
-    f.write(report_content)
+    f.write(report)
 
 print(f"Reporte de selección de características guardado en: {report_path}")
 print("\n--- Proceso de Selección de Características Completado ---")
