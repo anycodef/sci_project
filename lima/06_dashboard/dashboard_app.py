@@ -10,59 +10,6 @@ import seaborn as sns
 # --- Configuración de la Página y Estilos ---
 st.set_page_config(layout="wide", page_title="Análisis del Mercado Laboral de Lima", initial_sidebar_state="expanded")
 
-# Estilo CSS para un tema oscuro y profesional
-st.markdown("""
-<style>
-    body {
-        color: #fff;
-        background-color: #0e1117;
-    }
-    .main {
-        background-color: #0e1117;
-    }
-    .stApp {
-        background-color: #0e1117;
-    }
-    .stMetric {
-        border-radius: 10px;
-        padding: 15px;
-        background-color: #262730;
-        border: 1px solid #262730;
-        color: #fff;
-    }
-    .stMetric .st-bf {
-        color: #fff;
-    }
-    .st-cx {
-        background-color: #262730;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: #00aaff;
-    }
-    .st-emotion-cache-16txtl3 {
-        color: #00aaff;
-    }
-    .st-emotion-cache-10trblm {
-        color: #fff;
-    }
-    .stButton>button {
-        border-radius: 15px;
-        border: 2px solid #00aaff;
-        color: #00aaff;
-        background-color: transparent;
-        padding: 10px 20px;
-        font-weight: bold;
-    }
-    .stButton>button:hover {
-        border-color: #007bff;
-        color: #007bff;
-        background-color: rgba(0, 123, 255, 0.1);
-    }
-    .stSubheader {
-        color: #cfd8dc !important;
-    }
-</style>
-""", unsafe_allow_html=True)
 
 # --- Constantes y Mapeos ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
