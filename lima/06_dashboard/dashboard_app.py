@@ -8,31 +8,58 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # --- Configuración de la Página y Estilos ---
-st.set_page_config(layout="wide", page_title="Análisis del Mercado Laboral de Lima")
+st.set_page_config(layout="wide", page_title="Análisis del Mercado Laboral de Lima", initial_sidebar_state="expanded")
 
-# Estilo CSS para un diseño más profesional
+# Estilo CSS para un tema oscuro y profesional
 st.markdown("""
 <style>
-    .reportview-container {
-        background: #f0f2f6;
+    body {
+        color: #fff;
+        background-color: #0e1117;
     }
-    .sidebar .sidebar-content {
-        background: #ffffff;
+    .main {
+        background-color: #0e1117;
+    }
+    .stApp {
+        background-color: #0e1117;
     }
     .stMetric {
         border-radius: 10px;
         padding: 15px;
-        background-color: #f8f9fa;
-        border: 1px solid #dee2e6;
+        background-color: #262730;
+        border: 1px solid #262730;
+        color: #fff;
+    }
+    .stMetric .st-bf {
+        color: #fff;
+    }
+    .st-cx {
+        background-color: #262730;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #00aaff;
+    }
+    .st-emotion-cache-16txtl3 {
+        color: #00aaff;
+    }
+    .st-emotion-cache-10trblm {
+        color: #fff;
     }
     .stButton>button {
-        border-radius: 20px;
-        border: 1px solid #007bff;
-        color: #007bff;
+        border-radius: 15px;
+        border: 2px solid #00aaff;
+        color: #00aaff;
+        background-color: transparent;
+        padding: 10px 20px;
+        font-weight: bold;
     }
     .stButton>button:hover {
-        border-color: #0056b3;
-        color: #0056b3;
+        border-color: #007bff;
+        color: #007bff;
+        background-color: rgba(0, 123, 255, 0.1);
+    }
+    .stSubheader {
+        color: #cfd8dc !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -59,6 +86,23 @@ ETHNICITY_MAP = {
 INSURANCE_MAP = {
     1: 'ESSALUD', 2: 'Seguro Privado', 3: 'Ambos', 4: 'Otro',
     5: 'Seguro Integral (SIS)', 6: 'No Afiliado'
+}
+SUNAT_MAP = {
+    1: 'Persona Jurídica', 2: 'Persona Natural con RUC', 3: 'No Registrado', 4: 'No Sabe'
+}
+COMPANY_SIZE_MAP = {
+    1: 'Hasta 20 personas', 2: '21 a 50 personas', 3: '51 a 100 personas',
+    4: '101 a 500 personas', 5: 'Más de 500 personas'
+}
+SECTOR_MAP = {
+    1: 'Fuerzas Armadas/Policía', 2: 'Administración Pública', 3: 'Empresa Pública',
+    4: 'Empresa de Servicios (SERVICE)', 5: 'Empresa Privada', 6: 'Otro'
+}
+OCCUPATION_MAP = {
+    1: 'Empleador o Patrono', 2: 'Trabajador Independiente', 3: 'Empleado u Obrero',
+    4: 'Ayudante Familiar (Negocio)', 5: 'Ayudante Familiar (Empleo)', 6: 'Trabajador del Hogar',
+    7: 'Aprendiz/Practicante Remunerado', 8: 'Practicante sin Remuneración',
+    9: 'Ayudante Familiar (Otro Hogar)', 10: 'Ayudante Familiar (Otro Hogar)'
 }
 
 # --- Funciones de Carga de Datos y Modelos ---
@@ -96,6 +140,10 @@ def load_data():
     master_df['es_informal'] = np.where((master_df['OCUP300'] == 1) & (master_df['C361_1'] == 2), 1, 0)
     master_df['C377_label'] = master_df['C377'].map(ETHNICITY_MAP)
     master_df['SEGURO1_label'] = master_df['SEGURO1'].map(INSURANCE_MAP)
+    master_df['C312_label'] = master_df['C312'].map(SUNAT_MAP)
+    master_df['C317_label'] = master_df['C317'].map(COMPANY_SIZE_MAP)
+    master_df['C311_label'] = master_df['C311'].map(SECTOR_MAP)
+    master_df['C310_label'] = master_df['C310'].map(OCCUPATION_MAP)
 
     for col in ['INGTOT', 'C208', 'factor_expansion', 'whoraT', 'C366']:
         master_df[col] = pd.to_numeric(master_df[col], errors='coerce')
@@ -179,8 +227,7 @@ def main():
                 plt.xticks(rotation=45)
                 st.pyplot(fig)
 
-        st.markdown("### Análisis Demográfico Adicional")
-        with st.expander("Ver Distribución por Etnia y Seguro de Salud"):
+        with st.expander("Análisis Demográfico por Etnia y Seguro de Salud"):
             col1_demo, col2_demo = st.columns(2)
             with col1_demo:
                 st.write("**Autoidentificación Étnica**")
@@ -201,6 +248,64 @@ def main():
                     st.pyplot(fig)
                     st.markdown("**Interpretación:** La cobertura de seguros de salud es un indicador clave. Una alta proporción de 'No Afiliado' puede ser un indicio de informalidad laboral.")
 
+        st.markdown("### Análisis Laboral Detallado")
+        with st.expander("Ver Gráficos sobre Condiciones Laborales"):
+            st.write("#### Promedio de Horas Trabajadas por Ocupación")
+            avg_hours_occupation = df_filtered.groupby('C310_label')['whoraT'].mean().sort_values(ascending=False)
+            if not avg_hours_occupation.empty:
+                fig, ax = plt.subplots()
+                sns.barplot(y=avg_hours_occupation.index, x=avg_hours_occupation.values, ax=ax, orient='h', palette="cubehelix")
+                ax.set_xlabel("Horas Promedio Semanales")
+                st.pyplot(fig)
+                st.markdown("**Interpretación:** Este gráfico compara las horas de trabajo promedio entre diferentes categorías ocupacionales, revelando qué roles demandan más tiempo.")
+
+            st.write("#### Distribución de Empleados por Tamaño de Empresa")
+            company_size_dist = df_filtered.groupby('C317_label')['factor_expansion'].sum().sort_values(ascending=False)
+            if not company_size_dist.empty:
+                fig, ax = plt.subplots()
+                sns.barplot(y=company_size_dist.index, x=company_size_dist.values, ax=ax, orient='h', palette="rocket")
+                ax.set_xlabel("Población Estimada")
+                st.pyplot(fig)
+                st.markdown("**Interpretación:** Muestra la concentración de la fuerza laboral en micro, pequeñas, medianas y grandes empresas, un indicador clave de la estructura económica.")
+
+            st.write("#### Ingreso Promedio por Ocupación")
+            avg_income_occupation = df_filtered.groupby('C310_label')['INGTOT'].mean().sort_values(ascending=False)
+            if not avg_income_occupation.empty:
+                fig, ax = plt.subplots()
+                sns.barplot(y=avg_income_occupation.index, x=avg_income_occupation.values, ax=ax, orient='h', palette="crest")
+                ax.set_xlabel("Ingreso Promedio Mensual (S/.)")
+                st.pyplot(fig)
+                st.markdown("**Interpretación:** Compara los ingresos promedio entre roles, destacando las ocupaciones con mayor y menor remuneración en el mercado.")
+
+            col3_demo, col4_demo = st.columns(2)
+            with col3_demo:
+                st.write("#### Relación Laboral con SUNAT")
+                sunat_dist = df_filtered.groupby('C312_label')['factor_expansion'].sum()
+                if not sunat_dist.empty:
+                    fig, ax = plt.subplots()
+                    ax.pie(sunat_dist, labels=sunat_dist.index, autopct='%1.1f%%', startangle=90, colors=sns.color_palette("Set2"))
+                    ax.axis('equal')
+                    st.pyplot(fig)
+                    st.markdown("**Interpretación:** Este gráfico de pastel ilustra la formalidad del empleo a través del registro en SUNAT, un indicador crucial para entender la economía formal vs. informal.")
+
+            with col4_demo:
+                st.write("#### Ocupación de las Personas")
+                occupation_dist = df_filtered.groupby('C310_label')['factor_expansion'].sum()
+                if not occupation_dist.empty:
+                    fig, ax = plt.subplots()
+                    ax.pie(occupation_dist, labels=occupation_dist.index, autopct='%1.1f%%', startangle=90, colors=sns.color_palette("Paired"))
+                    ax.axis('equal')
+                    st.pyplot(fig)
+                    st.markdown("**Interpretación:** Muestra la distribución de la fuerza laboral entre diferentes tipos de empleo, como trabajador independiente, empleado, etc.")
+
+            st.write("#### Distribución por Sector de Empleo")
+            sector_dist = df_filtered.groupby('C311_label')['factor_expansion'].sum().sort_values(ascending=False)
+            if not sector_dist.empty:
+                fig, ax = plt.subplots()
+                sns.barplot(y=sector_dist.index, x=sector_dist.values, ax=ax, orient='h', palette="Spectral")
+                ax.set_xlabel("Población Estimada")
+                st.pyplot(fig)
+                st.markdown("**Interpretación:** Este gráfico muestra en qué sectores (público, privado, etc.) se concentra la mayor parte de la fuerza laboral de Lima.")
     with tab2:
         st.header("Interacción con Modelos Predictivos")
         st.subheader("1. Predicción de Ingreso Mensual (Regresión)")
